@@ -34,6 +34,10 @@ app.config(function($routeProvider) {
             templateUrl: 'partials/homepage.html',
             controller: 'HomePageCtrl'
         })
+        .when('/readbible', {
+            templateUrl: 'partials/readbible.html',
+            controller: 'ReadBibleCtrl'
+        })
         // .when('/pins/view/:id', { // colon means the value will change
         //     templateUrl: 'partials/pin-view.html',
         //     controller: 'PinViewCtrl'

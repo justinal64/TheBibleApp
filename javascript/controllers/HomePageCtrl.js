@@ -1,13 +1,19 @@
 "use strict";
 
-app.controller("HomePageCtrl", function($scope) {
-    // $scope.navItems = [{name: "Logout", url: "#/logout"},
-    // {name:"New Board", url: "#/boards/new"},
-    // {name:"My Boards", url: "#/boards/list"},
-    // {name:"New Pin", url: "#/pins/new"},
-    // {name:"All Pins", url: "#/allpins/list"}];
+app.controller("HomePageCtrl", function($scope, $location) {
 
-    $scope.loginUser = () => {
-        console.log("Working!!!!!!");
+    $scope.login = () => {
+        console.log("Login Working!!!!!!");
+        // Login Modal goes here
+    };
+
+    $scope.register = () => {
+        console.log("Register Working!!!!!!");
+        // Register Modal goes here
+    };
+
+    $scope.readthebible = () => {
+        console.log("readthebible Working!!!!!!");
+        $location.url("/readbible");
     };
 });

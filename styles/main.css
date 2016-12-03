@@ -151,6 +151,9 @@ body {
   100% {
     margin-left: -1000px; } }
 
+.test {
+  background-color: pink; }
+
 .hi {
   width: 50px;
   height: 72px;
