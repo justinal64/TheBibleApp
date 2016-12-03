@@ -167,11 +167,60 @@ body {
 }
 
 // readbible page styling
-.test {
-    background-color: pink;
+.left-page {
+    width: 50%;
+}
+
+// Test show/hide divs
+.container {
+    background: #EEE;
+    position: relative;
+}
+.col-md-2-4 {
+    background: #fff;
+    height: 150px;
+    width: 100px;
+    border: solid 1px #ccc;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 6px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.keys{
+  position: absolute;
+  top:200px;
 }
 
 
+
+.card-hide {
+    left: -100px !important;
+    opacity: 0 !important;
+}
 
 // Test using a sprite
 // http://jsfiddle.net/simurai/CGmCe/light/
