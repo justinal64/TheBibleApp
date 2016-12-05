@@ -7,34 +7,31 @@
         <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
-<body ng-app="TheBibleApp" ng-controller="NavCtrl" ng-cloak>
-    <div class="container">
-        <nav class="navbar">
-            <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#/">The Church App</a>
+    <body ng-app="TheBibleApp" ng-controller="NavCtrl" ng-cloak>
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">The Church App</a>
+                </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a ng-click="login()">Login</a>
+                    </li>
+                    <li>
+                        <a ng-click="register()">Register</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <div class="col-xs-12 col-md-12 bible" ng-view>
+            <!-- partials go here -->
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a ng-click="login()">Login</a>
-                </li>
-                <li>
-                    <a ng-click="register()">Register</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-        <div class="col-xs-12 col-md-12 bible" ng-view>
-        <!-- partials go here -->
         </div>
-    </div>
-    <!-- Testing area -->
-    <!-- End Testing area -->
-</body>
+        <!-- Testing area -->
+        <!-- End Testing area -->
+    </body>
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -51,7 +48,6 @@
     <script src="/javascript/factories/AuthFactory.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/factories/UserFactory.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/factories/BibleFactory.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/javascript/filters/filters.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/NavCtrl.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/AuthCtrl.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/HomePageCtrl.js" type="text/javascript" charset="utf-8"></script>
