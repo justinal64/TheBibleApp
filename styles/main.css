@@ -8,6 +8,9 @@
 body {
   font-family: 'MyWebFont', Fallback, sans-serif; }
 
+a[ng-click] {
+  cursor: pointer; }
+
 .index_center_content .read_the_bible {
   height: 2em;
   font-size: 3em; }

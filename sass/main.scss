@@ -14,7 +14,9 @@ body {
 }
 
 // Styling for the header and Navigation
-
+a[ng-click]{
+    cursor: pointer;
+}
 
 // Styling for Read the Bible Button
 .index_center_content {
