@@ -13,12 +13,9 @@ body {
   font-family: 'MyWebFont', Fallback, sans-serif;
 }
 
-.navigation {
-    margin-left: 0;
-    margin-right: 0;
-    .login {
-        text-align: right;
-    }
+// Styling for the header and Navigation
+a[ng-click]{
+    cursor: pointer;
 }
 
 // Styling for Read the Bible Button
