@@ -151,8 +151,9 @@ body {
   100% {
     margin-left: -1000px; } }
 
-.test {
-  background-color: pink; }
+.readbible img {
+  width: 100%;
+  height: 100%; }
 
 .hi {
   width: 50px;

@@ -1,4 +1,53 @@
-<div class="test" ng-repeat="kidsbible in kidsbibles">
-    <p>{{kidsbible.story}}</p>
+<!-- Example used -->
+<!-- http://jsfiddle.net/2ZzZB/56/ -->
+<!-- <div class="row">
+    <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+    </button>
+    {{currentPage+1}}/{{numberOfPages()}}
+    <button ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+    </button>
+</div>
+<div ng-repeat="bible in bibles | startFrom:currentPage*pageSize | limitTo:pageSize">
+    <div class="col-md-6 col-xs-6 readbibleleft">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <img src="{{bible.url}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+            {{bible.story}}
+            </div>
+        </div>
+    </div>
+</div> -->
 
+<!-- <hr /> -->
+<pager total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage"></pager>
+
+<!-- <hr /> -->
+<!-- <table class="table"> -->
+  <!-- <tr ng-repeat="row in data.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))"> -->
+<!--   <tr ng-repeat="bible in bibles.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
+    <td>{{bible.title}}</td>
+    <td>{{bible.story}}</td>
+  </tr>
+</table> -->
+
+<div class="readbible">
+    <div ng-repeat="bible in bibles.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
+        <div class="col-md-6 col-xs-6">
+            <div class="bible_img">
+                <img src="{{bible.url}}">
+            </div>
+            <div class="bible_text">
+                <span>{{bible.story}}</span>
+            </div>
+            <div class="page_num">
+                <span>Page # {{bible.id}}</span>
+            </div>
+        </div>
+    </div>
 </div>

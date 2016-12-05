@@ -42,6 +42,7 @@ body {
         z-index: 1;
     }
 }
+
 // Cloud animation
 // http://thecodeplayer.com/walkthrough/pure-css3-animated-clouds-background
 *{ margin: 0; padding: 0;}
@@ -167,11 +168,15 @@ body {
 }
 
 // readbible page styling
-.test {
-    background-color: pink;
+.readbible {
+    img {
+        width: 100%;
+        height: 100%;
+        // width: 350;
+        // height: 250px;
+    }
+
 }
-
-
 
 // Test using a sprite
 // http://jsfiddle.net/simurai/CGmCe/light/
