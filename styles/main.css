@@ -8,12 +8,6 @@
 body {
   font-family: 'MyWebFont', Fallback, sans-serif; }
 
-.navigation {
-  margin-left: 0;
-  margin-right: 0; }
-  .navigation .login {
-    text-align: right; }
-
 .index_center_content .read_the_bible {
   height: 2em;
   font-size: 3em; }
