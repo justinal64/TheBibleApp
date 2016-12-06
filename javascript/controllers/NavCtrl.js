@@ -1,5 +1,7 @@
 "use strict";
 
+// Example of a modal service
+// https://github.com/dwmkerr/angular-modal-service/blob/master/samples/sampleapp.js#L24
 app.controller('NavCtrl', ['$scope', 'ModalService', '$location', function($scope, ModalService, $location) {
 
   $scope.yesNoResult = null;
