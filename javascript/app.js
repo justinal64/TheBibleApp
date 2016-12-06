@@ -1,3 +1,3 @@
 "use strict";
 
-var app = angular.module("TheBibleApp", ["ngRoute", "ui.bootstrap", "angularModalService"]);
+var app = angular.module("TheBibleApp", ["ngRoute", 'angularModalService']);

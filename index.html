@@ -20,10 +20,10 @@
             <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a ng-click="login()">Login</a>
+                    <a ng-click="showComplex()">Login</a>
                 </li>
                 <li>
-                    <a ng-click="register()">Register</a>
+                    <a ng-click="showComplex()">Register</a>
                 </li>
               </ul>
             </div>
@@ -40,8 +40,9 @@
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
     <!-- Add to project if working -->
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script> -->
-    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+<!--     <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script> -->
     <script src="node_modules/angular-modal-service/dst/angular-modal-service.min.js"></script>
     <!-- End of cdn's -->
     <script src="node_modules/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
@@ -51,7 +52,7 @@
     <script src="/javascript/factories/AuthFactory.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/factories/UserFactory.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/factories/BibleFactory.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/javascript/filters/filters.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascript/controllers/ModalCtrl.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/NavCtrl.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/AuthCtrl.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/HomePageCtrl.js" type="text/javascript" charset="utf-8"></script>

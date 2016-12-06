@@ -1,6 +1,10 @@
 "use strict";
 
-app.controller('NavCtrl', function($scope, $location, ModalService) {
+app.controller('NavCtrl', ['$scope', 'ModalService', '$location', function($scope, ModalService, $location) {
+
+  $scope.yesNoResult = null;
+  $scope.complexResult = null;
+  $scope.customResult = null;
 
     $scope.login = () => {
         console.log("Login Working!!!!!!");
@@ -13,28 +17,45 @@ app.controller('NavCtrl', function($scope, $location, ModalService) {
     };
 
     $scope.readthebible = () => {
-        console.log("readthebible Working!!!!!!");
         $location.url("/readbible");
     };
 
-    $scope.show = function() {
-        ModalService.showModal({
-            templateUrl: './partials/modal.html',
-            controller: "ModalController"
-        }).then(function(modal) {
-            modal.element.modal();
-            modal.close.then(function(result) {
-                $scope.message = "You said " + result;
-            });
-        });
-    };
 
-});
+  $scope.showComplex = function() {
 
-app.controller('ModalController', function($scope, close) {
+    ModalService.showModal({
+      templateUrl: "./partials/modal.html",
+      controller: "ModalCtrl",
+      inputs: {
+        title: "A More Complex Example"
+      }
+    }).then(function(modal) {
+      modal.element.modal();
+      modal.close.then(function(result) {
+        $scope.complexResult  = "Name: " + result.name + ", age: " + result.age;
+      }).then(() => {
+        // Print out the results once the modal is closed.
+        console.log($scope.complexResult);
+      });
+    });
 
-    $scope.close = function(result) {
-        close(result, 500); // close, but give 500ms for bootstrap to animate
-    };
+  };
 
-});
+  // $scope.showCustom = function() {
+
+  //   ModalService.showModal({
+  //     templateUrl: "custom/custom.html",
+  //     controller: "CustomController"
+  //   }).then(function(modal) {
+  //     modal.close.then(function(result) {
+  //       $scope.customResult = "All good!";
+  //     });
+  //   });
+
+  // };
+
+}]);
+
+
+
+
