@@ -1,8 +1,5 @@
 "use strict";
 
-// Get Auth Working Correctly!!!!!!!!
-
-
 app.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG) {
   let currentUserData = null;
 
