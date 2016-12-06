@@ -33,7 +33,7 @@
             "url": "./img/kidsbible/adamandeve.jpg"
         },
         "3": {
-            "story": "Show Image",
+            "story": "",
             "title": "The Story of Creation",
             "description": "This is the story of God creating the world we live in.",
             "url": "./img/kidsbible/thestoryofcreation.png"
@@ -69,7 +69,7 @@
             "url": "./img/kidsbible/thestoryofcreation.png"
         },
         "9": {
-            "story": "Show Image",
+            "story": "",
             "title": "The Story of Noah",
             "description": "Noah and the flood",
             "url": "./img/kidsbible/thestoryofcreation.png"
@@ -105,7 +105,7 @@
             "url": "./img/kidsbible/thestoryofcreation.png"
         },
         "15": {
-            "story": "Show Image",
+            "story": "",
             "title": "The Story of Moses",
             "description": "The life of Moses",
             "url": "./img/kidsbible/thestoryofcreation.png"
@@ -201,7 +201,7 @@
             "url": "./img/kidsbible/thestoryofcreation.png"
         },
         "31": {
-            "story": "Show Image",
+            "story": "",
             "title": "Jesus Does God's Work",
             "description": "Jesus life on Earth",
             "url": "./img/kidsbible/thestoryofcreation.png"

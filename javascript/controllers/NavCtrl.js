@@ -1,6 +1,12 @@
 "use strict";
 
-app.controller('NavCtrl', function($scope, $location, ModalService) {
+// Example of a modal service
+// https://github.com/dwmkerr/angular-modal-service/blob/master/samples/sampleapp.js#L24
+app.controller('NavCtrl', ['$scope', 'ModalService', '$location', function($scope, ModalService, $location) {
+
+  $scope.yesNoResult = null;
+  $scope.complexResult = null;
+  $scope.customResult = null;
 
     $scope.login = () => {
         console.log("Login Working!!!!!!");
@@ -13,38 +19,43 @@ app.controller('NavCtrl', function($scope, $location, ModalService) {
     };
 
     $scope.readthebible = () => {
-        console.log("readthebible Working!!!!!!");
         $location.url("/readbible");
     };
 
-});
 
-var app = angular.module('app', []);
+  $scope.showComplex = function() {
 
-app.service('MathService', function() {
-    this.add = function(a, b) { return a + b; };
+    ModalService.showModal({
+      templateUrl: "./partials/modal.html",
+      controller: "ModalCtrl",
+      inputs: {
+        title: "A More Complex Example"
+      }
+    }).then(function(modal) {
+      modal.element.modal();
+      modal.close.then(function(result) {
+        $scope.complexResult  = "Name: " + result.name + ", age: " + result.age;
+      }).then(() => {
+        // Print out the results once the modal is closed.
+        console.log($scope.complexResult);
+      });
+    });
 
-    this.subtract = function(a, b) { return a - b; };
+  };
 
-    this.multiply = function(a, b) { return a * b; };
+  // $scope.showCustom = function() {
 
-    this.divide = function(a, b) { return a / b; };
-});
+  //   ModalService.showModal({
+  //     templateUrl: "custom/custom.html",
+  //     controller: "CustomController"
+  //   }).then(function(modal) {
+  //     modal.close.then(function(result) {
+  //       $scope.customResult = "All good!";
+  //     });
+  //   });
 
-app.service('CalculatorService', function(MathService){
+  // };
 
-    this.square = function(a) { return MathService.multiply(a,a); };
-    this.cube = function(a) { return MathService.multiply(a, MathService.multiply(a,a)); };
+}]);
 
-});
 
-app.controller('CalculatorController', function($scope, CalculatorService) {
-
-    $scope.doSquare = function() {
-        $scope.answer = CalculatorService.square($scope.number);
-    };
-
-    $scope.doCube = function() {
-        $scope.answer = CalculatorService.cube($scope.number);
-    };
-});
