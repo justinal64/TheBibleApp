@@ -25,7 +25,7 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
             console.log("userCreds", userCreds);
             $scope.login = {};
             $scope.register = {};
-            $location.url(`/allpins/list`);
+            $location.url(`/readbible`);
         });
     };
 
