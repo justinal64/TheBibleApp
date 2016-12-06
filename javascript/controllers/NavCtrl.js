@@ -59,5 +59,3 @@ app.controller('NavCtrl', ['$scope', 'ModalService', '$location', function($scop
 }]);
 
 
-
-
