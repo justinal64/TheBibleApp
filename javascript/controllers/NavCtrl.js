@@ -7,23 +7,10 @@ app.controller('NavCtrl', [
      function($scope, ModalService, $location, AuthFactory, $rootScope) {
 
     $rootScope.userloggedin = false;
-    // $scope.yesNoResult = null;
-    // $scope.complexResult = null;
-    // $scope.customResult = null;
-
-    $scope.login = () => {
-        console.log("Login Working!!!!!!");
-        // Login Modal goes here
-    };
-
-    $scope.register = () => {
-        console.log("Register Working!!!!!!");
-        // Register Modal goes here
-    };
 
     $scope.logout = () => {
-        console.log("logout Working!!!!!!");
         AuthFactory.logout();
+        $rootScope.userloggedin = false;
     };
 
     $scope.readthebible = () => {

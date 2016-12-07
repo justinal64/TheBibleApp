@@ -1,13 +1,18 @@
 "use strict";
 
-app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter) {
-    $scope.bibleseven = {};
-    $scope.biblesodd = {};
+app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootScope, ModalService) {
     $scope.bible = {};
 
-    $scope.login = () => {
-        console.log("Login Working!!!!!!");
-        // Login Modal goes here
+    $scope.bookmark = (bible) => {
+        console.log("bookmark Working!!!!!!");
+        console.log(bible);
+        // If userloggedin is true bookmark the page
+        if($rootScope.userloggedin) {
+            // add bookmark to db
+
+        } else {
+            showComplex();
+        }
     };
 
     let getKidsBible = () => {
@@ -18,6 +23,27 @@ app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter) {
     };
     // populate array with all verses from db
     getKidsBible();
+
+    let showComplex = function() {
+
+    ModalService.showModal({
+      templateUrl: "./partials/modal.html",
+      controller: "ModalCtrl",
+      inputs: {
+        title: "Login for Extra Features"
+      }
+    }).then(function(modal) {
+      modal.element.modal();
+      modal.close.then(function(result) {
+        $scope.complexResult  = "Password: " + result.password + ", age: " + result.age;
+        // Print out the results once the modal is closed.
+        console.log(result);
+      }).then(() => {
+
+      });
+    });
+
+  };
 
 
 // Test area

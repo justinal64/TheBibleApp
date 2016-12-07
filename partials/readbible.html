@@ -1,10 +1,11 @@
-
 <pager total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage"></pager>
 
 <div class="readbible" ng-cloak>
-
     <div ng-repeat="bible in bibles.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
         <div class="col-md-6 col-xs-6">
+            <a ng-click="bookmark(bible)">
+                <i class="fa fa-bookmark fa-3x" aria-hidden="true"></i>
+            </a>
             <div class="bible_img">
                 <img ng-src="{{bible.url}}">
             </div>
