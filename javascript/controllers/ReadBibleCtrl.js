@@ -48,7 +48,7 @@ app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootSco
 
 // Test area
   $scope.viewby = 2; // number per page
-  $scope.totalItems = 37; //$scope.data.length change this back so it can be more scalable
+  $scope.totalItems = 34; //$scope.data.length change this back so it can be more scalable
   $scope.currentPage = `1`;
   $scope.itemsPerPage = $scope.viewby;
   $scope.maxSize = 0; //Number of pager buttons to show
