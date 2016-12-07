@@ -1,11 +1,12 @@
 
 <pager total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage"></pager>
 
-<div class="readbible">
+<div class="readbible" ng-cloak>
+
     <div ng-repeat="bible in bibles.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
         <div class="col-md-6 col-xs-6">
             <div class="bible_img">
-                <img src="{{bible.url}}">
+                <img ng-src="{{bible.url}}">
             </div>
             <div class="bible_text">
                 <span>{{bible.story}}</span>
