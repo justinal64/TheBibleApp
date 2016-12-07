@@ -42,6 +42,10 @@ app.config(function($routeProvider) {
             templateUrl: 'partials/modal.html',
             controller: 'NavCtrl'
         })
+        .when('/noahflood', {
+            templateUrl: 'partials/kidsbible/noahflood.html',
+            controller: 'ReadBibleCtrl'
+        })
         // .when('/pins/view/:id', { // colon means the value will change
         //     templateUrl: 'partials/pin-view.html',
         //     controller: 'PinViewCtrl'
