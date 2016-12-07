@@ -18,231 +18,234 @@
             "story": "God made the earth and the sun. He made the moon and the stars.",
             "title": "The Story of Creation",
             "description": "This is the story of God creating the world we live in.",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/beginning.png",
+            "page_num": "1"
         },
         "1": {
-            "story": "God made the earth and the sun. He made the moon and the stars.",
-            "title": "The Story of Creation",
-            "description": "This is the story of God creating the world we live in.",
-            "url": "./img/kidsbible/thestoryofcreation.png"
-        },
-        "2": {
             "story": "God made all the animals and plants that live on earth. He made man and women. God looked at all He had done. And it was very good!",
             "title": "The Story of Creation",
             "description": "This is the story of God creating the world we live in.",
-            "url": "./img/kidsbible/adamandeve.jpg"
+            "url": "./img/kidsbible/adamandeve.png",
+            "page_num": "2"
         },
-        "3": {
-            "story": "",
-            "title": "The Story of Creation",
-            "description": "This is the story of God creating the world we live in.",
-            "url": "./img/kidsbible/thestoryofcreation.png"
-        },
-        "4": {
+        "2": {
             "story": "Noah was a good man. God told Noah to build a big boat.",
             "title": "The Story of Noah",
             "description": "Noah and the flood",
-            "url": "./img/kidsbible/noahsark.jpg"
+            "url": "./img/kidsbible/noahsark.jpg",
+            "page_num": "3"
         },
-        "5": {
+        "3": {
             "story": "He told Noah to get two of every kind of animal on the earth. The boat was big enough to hold them all.",
             "title": "The Story of Noah",
             "description": "Noah and the flood",
-            "url": "./img/kidsbible/noahsarkanimals.jpg"
+            "url": "./img/kidsbible/noahsarkland.png",
+            "page_num": "4"
         },
-        "6": {
+        "4": {
             "story": "A storm came. It rained for fourty days and fourty nights. The earth was flooded.",
             "title": "The Story of Noah",
             "description": "Noah and the flood",
-            "url": "./img/kidsbible/noahsark.jpg"
+            "url": "./img/kidsbible/noahsarkstorm.jpg",
+            "page_num": "5"
         },
-        "7": {
+        "5": {
             "story": "When the storm stopped, Noah sent a dove to find dry land.",
             "title": "The Story of Noah",
             "description": "Noah and the flood",
-            "url": "./img/kidsbible/dove.jpeg"
+            "url": "./img/kidsbible/noahsarkdove.jpg",
+            "page_num": "6"
         },
-        "8": {
+        "6": {
             "story": "The boat landed on top of a mountain. The water was gone! A rainbow appeared in the sky. It was a sign from God. Noah's family and the animals left the boat. God had saved them from the flood.",
             "title": "The Story of Noah",
             "description": "Noah and the flood",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/noahsarklands.jpg",
+            "page_num": "7"
         },
-        "9": {
-            "story": "",
-            "title": "The Story of Noah",
-            "description": "Noah and the flood",
-            "url": "./img/kidsbible/thestoryofcreation.png"
-        },
-        "10": {
+        "7": {
             "story": "A women had a baby boy. The baby was in great danger. His mother had to save him. She put him in a basket and took him to the river.",
             "title": "The Story of Moses",
             "description": "The life of Moses",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/babymosesmom.jpg",
+            "page_num": "8"
         },
-        "11": {
+        "8": {
             "story": "The king's daughter found the basket. The young princess cared for the baby as her own. She named him Moses.",
             "title": "The Story of Moses",
             "description": "The life of Moses",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/babymosesking.jpg",
+            "page_num": "9"
         },
-        "12": {
+        "9": {
             "story": "Moses grew up to be a strong man. He became a shepard.",
             "title": "The Story of Moses",
             "description": "The life of Moses",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/moses.jpg",
+            "page_num": "10"
         },
-        "13": {
+        "10": {
             "story": "Then God spoke to Moses. He told moses to save his people. They were slaves to a cruel king.",
             "title": "The Story of Moses",
             "description": "The life of Moses",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "11"
         },
-        "14": {
+        "11": {
             "story": "God's people ran away from the king. Moses led them across the desert.",
             "title": "The Story of Moses",
             "description": "The life of Moses",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "12"
         },
-        "15": {
-            "story": "",
-            "title": "The Story of Moses",
-            "description": "The life of Moses",
-            "url": "./img/kidsbible/thestoryofcreation.png"
-        },
-        "16": {
+        "12": {
             "story": "They came to the sea. God made the sea open up so that the people could cross.",
             "title": "The Story of Moses",
             "description": "The life of Moses",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/mosessea.png",
+            "page_num": "13"
         },
-        "17": {
+        "13": {
             "story": "God's people were free! They thanked Moses, their great leader.",
             "title": "The Story of Moses",
             "description": "The life of Moses",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "14"
         },
-        "18": {
+        "14": {
             "story": "Goliath was a giant. He came to fight God's people. The soldiers did not want to fight Goliath. He was too big and strong.",
             "title": "David and Goliath",
             "description": "The story of how David defeated Goliath",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/davidandgoliath.jpg",
+            "page_num": "15"
         },
-        "19": {
+        "15": {
             "story": "But a boy named David was not afraid. God had blessed David and made him very brave.",
             "title": "David and Goliath",
             "description": "The story of how David defeated Goliath",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/david.jpg",
+            "page_num": "16"
         },
-        "20": {
+        "16": {
             "story": "David stood before the giant Goliath. He said, \"I have come to fight you in the name of God.\".",
             "title": "David and Goliath",
             "description": "The story of how David defeated Goliath",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "17"
         },
-        "21": {
+        "17": {
             "story": "He threw a stone at Goliath. The stone hit the giant right in the middle of his forehead. He would never bother the people again. David was a hero.",
             "title": "David and Goliath",
             "description": "The story of how David defeated Goliath",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "18"
         },
-        "22": {
+        "18": {
             "story": "Once there was a man named Daniel. Daniel had faith in God. The king liked Daniel and gave him an important job. But other men were jealous of Daniel.",
             "title": "Daniel and the Lions",
             "description": "Daniel and the lions Den",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "19"
         },
-        "23": {
+        "19": {
             "story": "The jealous men wanted to get rid of Daniel. They made him go into a pit with hungry lions. Daniel was in the pit all night long. He prayed to God.",
             "title": "Daniel and the Lions",
             "description": "Daniel and the lions Den",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "20"
         },
-        "24": {
+        "20": {
             "story": "The next day, Daniel came out of the pit. The lions had not eaten him! Daniel's faith in God had saved him.",
             "title": "Daniel and the Lions",
             "description": "Daniel and the lions Den",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "21"
         },
-        "25": {
+        "21": {
             "story": "Mary lived in the town of Nazareth. God sent an angel to her. The angel had wonderful news for Mary. She would be the mother of God's own son.",
             "title": "Jesus is Born",
             "description": "Jesus birth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "22"
         },
-        "26": {
+        "22": {
             "story": "It was time for the baby to be born. Mary and her husband, Joseph, had to travel to the town of Bethlehem.",
             "title": "Jesus is Born",
             "description": "Jesus birth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "23"
         },
-        "27": {
+        "23": {
             "story": "There was no room for Mary and Joseph at the inn. They had to stay in the stable. The baby was born there. They named him Jesus. When he was born, a bright star shone in the sky.",
             "title": "Jesus is Born",
             "description": "Jesus birth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "24"
         },
-        "28": {
+        "24": {
             "story": "That night, angels came to some shepards in the fields. They told the shepherds about the baby, who was Christ the Lord. The shepherds came to worship Jesus.",
             "title": "The Shepards and the Wise Men",
             "description": "The Shepards and the Wise Men",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "25"
         },
-        "29": {
+        "25": {
             "story": "Some kings from the East saw the star. They followed it to Bethlehem. They bowed to the baby Jesus. They gave him gifts.",
             "title": "The Shepards and the Wise Men",
             "description": "The Shepards and the Wise Men",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "26"
         },
-        "30": {
+        "26": {
             "story": "God had sent Jesus to earth to do good for all people. When Jesus grew up, he told everyone about the power and goodness of God. He told them that God loved them.",
             "title": "Jesus Does God's Work",
             "description": "Jesus life on Earth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "27"
         },
-        "31": {
-            "story": "",
-            "title": "Jesus Does God's Work",
-            "description": "Jesus life on Earth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
-        },
-        "32": {
+        "27": {
             "story": "One day, a women followed Jesus. She was very sick. She touched Jesus' coat.",
             "title": "Jesus Does God's Work",
             "description": "Jesus life on Earth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "28"
         },
-        "33": {
+        "28": {
             "story": "Jesus turned around. He blessed the woman. All at once, she felt better. She was not sick anymore.",
             "title": "Jesus Does God's Work",
             "description": "Jesus life on Earth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "29"
         },
-        "34": {
+        "29": {
             "story": "A man was blind came to Jesus. Jesus touched his eyes with mud.",
             "title": "Jesus Does God's Work",
             "description": "Jesus life on Earth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "30"
         },
-        "35": {
+        "30": {
             "story": "Now the man could see! The sick woman and the blind man were healed because their faith in God and Jesus. ",
             "title": "Jesus Does God's Work",
             "description": "Jesus life on Earth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "31"
         },
-        "36": {
+        "31": {
             "story": "One day, people brought their little children to see Jesus. Some men tried to send the children away.",
             "title": "Jesus and the Little Children",
             "description": "Jesus loves little children",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "32"
         },
-        "37": {
+        "32": {
             "story": "But Jesus loved everyone, big and small. He told the children to come to him. Jesus blessed the children. He will always be our friend.",
             "title": "Jesus and the Little Children",
             "description": "Jesus loves little children",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "33"
         },
-        "38": {
+        "33": {
             "story": "Let's read and learn together. This simple invitation can be your child's first step in a lifelong spiritual journey.",
             "title": "Letter to Parents",
             "description": "Let's read and learn together. This simple invitation can be your child's first step in a lifelong spiritual journey.",
