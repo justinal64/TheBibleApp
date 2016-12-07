@@ -2,8 +2,11 @@
 
 // Example of a modal service
 // https://github.com/dwmkerr/angular-modal-service/blob/master/samples/sampleapp.js#L24
-app.controller('NavCtrl', ['$scope', 'ModalService', '$location', function($scope, ModalService, $location, ModalCtrl) {
+app.controller('NavCtrl', [
+    '$scope', 'ModalService', '$location', 'AuthFactory', '$rootScope',
+     function($scope, ModalService, $location, AuthFactory, $rootScope) {
 
+    $rootScope.userloggedin = false;
     // $scope.yesNoResult = null;
     // $scope.complexResult = null;
     // $scope.customResult = null;
@@ -16,6 +19,11 @@ app.controller('NavCtrl', ['$scope', 'ModalService', '$location', function($scop
     $scope.register = () => {
         console.log("Register Working!!!!!!");
         // Register Modal goes here
+    };
+
+    $scope.logout = () => {
+        console.log("logout Working!!!!!!");
+        AuthFactory.logout();
     };
 
     $scope.readthebible = () => {

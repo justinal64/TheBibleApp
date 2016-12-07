@@ -1,8 +1,8 @@
 "use strict";
 
 app.controller('ModalCtrl', [
-  '$scope', '$element', 'title', 'close', 'AuthFactory',
-  function($scope, $element, title, close, AuthFactory) {
+  '$scope', '$element', 'title', 'close', 'AuthFactory', '$rootScope',
+  function($scope, $element, title, close, AuthFactory, $rootScope) {
 
 
     $scope.email = null;
@@ -34,15 +34,27 @@ app.controller('ModalCtrl', [
             email: $scope.email,
             age: $scope.age
         }, 500); // close, but give 500ms for bootstrap to animate
-        let credentials = {
+        credentials = {
             password: $scope.password,
             email: $scope.email,
             age: $scope.age
         };
         console.log(credentials);
+        auth(credentials);
+    };
+
+    let auth = () => {
         AuthFactory.authenticate(credentials).then((result) => {
             console.log("result = ", result);
+            if(result !== null) {
+                $rootScope.userloggedin = true;
+            }
         });
+    };
+
+    $scope.logout = () => {
+        console.log("logout Working!!!!!!");
+        AuthFactory.logout();
     };
 
     //  This cancel function must use the bootstrap, 'modal' function because
