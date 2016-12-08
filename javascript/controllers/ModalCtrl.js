@@ -4,31 +4,50 @@ app.controller('ModalCtrl', [
   '$scope', '$element', 'title', 'close', 'AuthFactory', '$rootScope',
   function($scope, $element, title, close, AuthFactory, $rootScope) {
 
-
-    $scope.email = null;
-    $scope.age = null;
-    $scope.password = null;
     $scope.title = title;
 
     // Hide register form by default
-    $scope.show = false;
-    let credentials = {};
+    $scope.showdiv = false;
 
 
+    // Used to change to register form
     $scope.showRegisterForm = () => {
-        $scope.show = true;
+        $scope.showdiv = true;
     };
-
+    // Used to change to login form
     $scope.showLoginForm = () => {
-        $scope.show = false;
+        $scope.showdiv = false;
     };
-
-    $scope.register = () => {
-        console.log("register working!!!");
+    // used to register
+    $scope.register = (registerUser) => {
+        $scope.showdiv = true;
+        register(registerUser);
     };
-
-
-
+    // register the new user
+    let register = (user) => {
+        AuthFactory.registerWithEmail(user).then((result) => {
+            if(result !== null) {
+                $rootScope.userloggedin = true;
+            }
+        });
+    };
+    // Login user
+    $scope.login = (user) => {
+        $scope.showdiv = true;
+        auth(user);
+    };
+    // logout the user
+    $scope.logout = () => {
+        AuthFactory.logout();
+    };
+    // authenticate the user
+    let auth = (user) => {
+        AuthFactory.authenticate(user).then((result) => {
+            if(result !== null) {
+                $rootScope.userloggedin = true;
+            }
+        });
+    };
     //  This close function doesn't need to use jQuery or bootstrap, because
     //  the button has the 'data-dismiss' attribute.
     $scope.close = function() {
@@ -37,28 +56,7 @@ app.controller('ModalCtrl', [
             email: $scope.email,
             age: $scope.age
         }, 500); // close, but give 500ms for bootstrap to animate
-        credentials = {
-            password: $scope.password,
-            email: $scope.email,
-            age: $scope.age
-        };
-        auth(credentials);
     };
-
-    let auth = () => {
-        AuthFactory.authenticate(credentials).then((result) => {
-            console.log("result = ", result);
-            if(result !== null) {
-                $rootScope.userloggedin = true;
-            }
-        });
-    };
-
-    $scope.logout = () => {
-        console.log("logout Working!!!!!!");
-        AuthFactory.logout();
-    };
-
     //  This cancel function must use the bootstrap, 'modal' function because
     //  the doesn't have the 'data-dismiss' attribute.
     $scope.cancel = function() {

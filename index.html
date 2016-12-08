@@ -19,25 +19,23 @@ https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#/">The Church App</a>
                 </div>
-                  <ul class="nav navbar-nav navbar-right">
-                  <li>
-                        <a href="#/creation">Kids Bible</a>
-                    </li>
-                    <li ng-show="!userloggedin">
-                        <a ng-click="showComplex()">Login/Register</a>
-                    </li>
-                    <li ng-show="userloggedin">
-                        <a ng-click="logout()">Logout</a>
-                    </li>
-                  </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#/creation">Kids Bible</a>
+                        </li>
+                        <li ng-show="!userloggedin">
+                            <a ng-click="showComplex()">Login/Register</a>
+                        </li>
+                        <li ng-show="userloggedin">
+                            <a ng-click="logout()">Logout</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
             <div class="col-xs-12 col-md-12 bible" ng-view>
                 <!-- partials go here -->
             </div>
         </div>
-        <!-- Testing area -->
-        <!-- End Testing area -->
     </body>
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
