@@ -13,6 +13,16 @@ body {
   font-family: 'MyWebFont', Fallback, sans-serif;
 }
 
+// styling around the bible
+.bible {
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 25px;
+}
+
 // Styling for the header and Navigation
 a[ng-click]{
     cursor: pointer;
@@ -44,10 +54,10 @@ a[ng-click]{
 // http://thecodeplayer.com/walkthrough/pure-css3-animated-clouds-background
 *{ margin: 0; padding: 0;}
 
-body {
-    /*To hide the horizontal scroller appearing during the animation*/
-    overflow: hidden;
-}
+// body {
+//     /*To hide the horizontal scroller appearing during the animation*/
+//     overflow: hidden;
+// }
 
 #clouds{
     background: #c9dbe9;
@@ -167,10 +177,13 @@ body {
 // readbible page styling
 .readbible {
 
+    .bible_border {
+
+    }
+
     img {
-        width: 100%;
-        height: 100%;
-        max-height: 350px;
+        width: 390px;
+        height: 350px;
         margin-bottom: .5em;
     }
 
@@ -182,46 +195,55 @@ body {
             margin-top: 2px dashed blue;
         }
     }
-
-
 }
 
 
 // Test using a sprite
 // http://jsfiddle.net/simurai/CGmCe/light/
-.hi {
-    width: 50px;
-    height: 72px;
-    background-image: url("http://s.cdpn.io/79/sprite-steps.png");
+// .hi {
+//     width: 50px;
+//     height: 72px;
+//     background-image: url("http://s.cdpn.io/79/sprite-steps.png");
 
-    -webkit-animation: play .8s steps(10) infinite;
-       -moz-animation: play .8s steps(10) infinite;
-        -ms-animation: play .8s steps(10) infinite;
-         -o-animation: play .8s steps(10) infinite;
-            animation: play .8s steps(10) infinite;
-}
+//     -webkit-animation: play .8s steps(10) infinite;
+//        -moz-animation: play .8s steps(10) infinite;
+//         -ms-animation: play .8s steps(10) infinite;
+//          -o-animation: play .8s steps(10) infinite;
+//             animation: play .8s steps(10) infinite;
+// }
 
-@-webkit-keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -500px; }
-}
+// @-webkit-keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: -500px; }
+// }
 
-@-moz-keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -500px; }
-}
+// @-moz-keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: -500px; }
+// }
 
-@-ms-keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -500px; }
-}
+// @-ms-keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: -500px; }
+// }
 
-@-o-keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -500px; }
-}
+// @-o-keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: -500px; }
+// }
 
-@keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -500px; }
-}
+// @keyframes play {
+//    from { background-position:    0px; }
+//      to { background-position: -500px; }
+// }
+
+// Media queries for smaller screens
+// @media only screen and (max-width: 990px) {
+//     body {
+//         background-color: lightblue;
+//     }
+
+//     .container {
+//         width: 100%;
+//     }
+// }
