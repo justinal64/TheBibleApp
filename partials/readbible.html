@@ -6,7 +6,7 @@
             <a ng-click="bookmark(bible)">
                 <i class="fa fa-bookmark fa-3x" aria-hidden="true"></i>
             </a>
-            <img src="./img/gif/rain.gif">
+            <!-- <img src="{{bible.url}}"> -->
             <div class="col-xs-offset-2 col-xs-8 bible_img">
                 <img ng-src="{{bible.url}}">
             </div>
@@ -14,7 +14,7 @@
                 <span>{{bible.story}}</span>
             </div>
             <div class="col-xs-12 page_num">
-                <span>Page # {{bible.id}}</span>
+                <span>Page # {{bible.page_num}}</span>
             </div>
         </div>
     </div>
