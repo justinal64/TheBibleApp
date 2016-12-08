@@ -218,14 +218,14 @@
             "page_num": "29"
         },
         "29": {
-            "story": "A man was blind came to Jesus. Jesus touched his eyes with mud.",
+            "story": "A man who was blind came to Jesus. Jesus touched his eyes with mud.",
             "title": "Jesus Does God's Work",
             "description": "Jesus life on Earth",
             "url": "./img/kidsbible/thestoryofcreation.png",
             "page_num": "30"
         },
         "30": {
-            "story": "Now the man could see! The sick woman and the blind man were healed because their faith in God and Jesus. ",
+            "story": "Now the man could see! The sick woman and the blind man were healed because their faith in God and Jesus.",
             "title": "Jesus Does God's Work",
             "description": "Jesus life on Earth",
             "url": "./img/kidsbible/thestoryofcreation.png",
@@ -249,7 +249,8 @@
             "story": "Let's read and learn together. This simple invitation can be your child's first step in a lifelong spiritual journey.",
             "title": "Letter to Parents",
             "description": "Let's read and learn together. This simple invitation can be your child's first step in a lifelong spiritual journey.",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/thestoryofcreation.png",
+            "page_num": "34"
         }
     }
 }

@@ -6,6 +6,10 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <!-- Add to project if I decide to use animate.css -->
+        <!-- https://github.com/daneden/animate.css -->
+        <link rel="stylesheet" type="text/css" href="
+https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     </head>
     <body ng-app="TheBibleApp" ng-controller="NavCtrl" ng-cloak>
         <div class="container">
@@ -16,6 +20,9 @@
                     <a class="navbar-brand" href="#/">The Church App</a>
                 </div>
                   <ul class="nav navbar-nav navbar-right">
+                  <li>
+                        <a href="#/creation">Kids Bible</a>
+                    </li>
                     <li ng-show="!userloggedin">
                         <a ng-click="showComplex()">Login/Register</a>
                     </li>
