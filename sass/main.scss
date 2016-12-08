@@ -166,28 +166,26 @@ body {
 
 // readbible page styling
 .readbible {
-    // .gif {
-    //     width: 250px;
-    //     height: 250px;
-    // }
 
-    // .bible_img {
-    //     width: 100%;
-    //     height: 100%;
-    // }
-
-    i {
-        // position: absolute;
-        // float: right;
+    img {
+        width: 100%;
+        height: 100%;
+        max-height: 350px;
+        margin-bottom: .5em;
     }
 
+    .bible_text {
+        font-size: 2em;
+        margin-top: .25em;
+
+        .page_num {
+            margin-top: 2px dashed blue;
+        }
+    }
+
+
 }
 
-.noah img {
-    width: 100%;
-    height: 100%;
-    // background-image: url('../img/kidsbible/noahsarkstorm.jpg');
-}
 
 // Test using a sprite
 // http://jsfiddle.net/simurai/CGmCe/light/
