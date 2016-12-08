@@ -27,6 +27,7 @@ app.controller('ModalCtrl', [
     let register = (user) => {
         AuthFactory.registerWithEmail(user).then((result) => {
             if(result !== null) {
+                $rootScope.name = result.email;
                 $rootScope.userloggedin = true;
             }
         });
@@ -44,6 +45,7 @@ app.controller('ModalCtrl', [
     let auth = (user) => {
         AuthFactory.authenticate(user).then((result) => {
             if(result !== null) {
+                $rootScope.name = result.email;
                 $rootScope.userloggedin = true;
             }
         });

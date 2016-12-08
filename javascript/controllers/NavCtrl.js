@@ -6,19 +6,20 @@ app.controller('NavCtrl', [
     '$scope', 'ModalService', '$location', 'AuthFactory', '$rootScope',
      function($scope, ModalService, $location, AuthFactory, $rootScope) {
 
+    // is anyone logged in?
     $rootScope.userloggedin = false;
-
+    // name if the user logged in
+    $rootScope.name = "";
     $scope.logout = () => {
         AuthFactory.logout();
         $rootScope.userloggedin = false;
     };
-
+    // Read the Bible Button
     $scope.readthebible = () => {
         $location.url("/readbible");
     };
-
-
-  $scope.showComplex = function() {
+    // show modal
+    $scope.showComplex = function() {
 
     ModalService.showModal({
       templateUrl: "./partials/modal.html",
