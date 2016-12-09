@@ -1,241 +1,57 @@
 <!-- <html lang="en" ng-app="TheBibleApp"> -->
   <!-- <head> -->
-    <title>Angular Material - Tabs and Responsive</title>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css" />
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
-    <!-- <meta name="viewport" content="initial-scale=1" /> -->
+    <meta name="viewport" content="initial-scale=1" /> -->
   <!-- </head> -->
-  <body layout="column" ng-app="TheBibleApp">
+    <!-- <body layout="column" ng-app="TheBibleApp"> -->
 
     <md-toolbar layout="row">
-      <div class="md-toolbar-tools">
-        <h1>Hello World</h1>
-      </div>
+        <div class="md-toolbar-tools">
+            <h1>Children's Bible</h1>
+        </div>
     </md-toolbar>
 
     <md-content layout="row" flex>
         <md-tabs flex>
-
-          <md-tab label="Form" flex>
-
-            <md-content layout="row" flex style="height:100%">
-              <div layout="column">
-               <md-sidenav layout-padding layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
-                hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />
-                 hello <br />hello <br />
-                 hello <br />hello <br />hello <br />
-                 hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />hello <br />
-              </md-sidenav>
-              </div>
-
-              <div layout="column" flex id="content">
-                  <md-content layout="row" flex class="md-padding" layout-wrap>
-
-                      <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                        <md-input-container>
-                            <label>First Name</label>
-                            <input ng-model="firstName" />
-                        </md-input-container>
-                      </div>
-                      <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                        <md-input-container>
-                          <label>Last Name</label>
-                          <input ng-model="lastName" />
-                        </md-input-container>
-                      </div>
-                          <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                            <md-input-container>
-                              <label>Size</label>
-                              <md-select ng-model="size">
-                                <md-option value="xs">Xtra Small</md-option>
-                                <md-option value="s">Small</md-option>
-                                <md-option value="m">Medium</md-option>
-                                <md-option value="l">Large</md-option>
-                                <md-option value="xl">Extra Large</md-option>
-                                <md-option value="xxl">Extra Extra Large</md-option>
-                              </md-select>
-                            </md-input-container>
-                          </div>
-                          <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                            <md-input-container>
-                              <label>Favorite Color</label>
-                              <md-select ng-model="size">
-                                <md-option value="r">Red</md-option>
-                                <md-option value="g">Green</md-option>
-                                <md-option value="b">Blue</md-option>
-                                <md-option value="y">Yellow</md-option>
-                                <md-option value="bl">Black</md-option>
-                                <md-option value="w">White</md-option>
-                              </md-select>
-                            </md-input-container>
-                          </div>
-
-
-
-                    <md-content layout="column" flex="100" class="md-whiteframe-3dp">
-                      <md-toolbar layout="row">
-                        <div class="md-toolbar-tools">
-                          <h1>Subsection 1</h1>
-                          <span flex></span>
-                          <md-button class="md-icon-button" aria-label="Collapse" ng-click="toggleExpansion('s1')">
-                            <i class="material-icons" layout-padding>expand_less</i>
-                          </md-button>
+            <md-tab ng-repeat="bible in bibles" label="Section {{bible.page_num}}">
+                <md-content layout-padding>
+                    <div class="readbible" ng-cloak>
+                        <div > <!-- .slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) -->
+                            <!-- <div class="col-md-6 col-xs-12 bible_border">
+                                <div class="col-xs-offset-1 col-xs-5 bible_img"> -->
+                                    <!-- <img ng-src="{{bible.url}}"> -->
+                           <!--      </div>
+                                <div class="col-xs-12 bible_text">
+                                    <span>{{bible.story}}</span>
+                                </div>
+                                <div class="col-xs-12 page_num">
+                                    <span>Page # {{bible.page_num}}</span>
+                                </div>
+                            </div> -->
+                            <div>This is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of content</div>
                         </div>
-                      </md-toolbar>
-                      <div layout="row" flex class="md-padding" layout-wrap id="s1">
+                    </div>
+                </md-content>
+            </md-tab>
 
-                      <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                        <md-input-container>
-                            <label>First Name</label>
-                            <input ng-model="firstName" />
-                        </md-input-container>
-                      </div>
-                      <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                        <md-input-container>
-                          <label>Last Name</label>
-                          <input ng-model="lastName" />
-                        </md-input-container>
-                      </div>
-                          <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                            <md-input-container>
-                              <label>Size</label>
-                              <md-select ng-model="size">
-                                <md-option value="xs">Xtra Small</md-option>
-                                <md-option value="s">Small</md-option>
-                                <md-option value="m">Medium</md-option>
-                                <md-option value="l">Large</md-option>
-                                <md-option value="xl">Extra Large</md-option>
-                                <md-option value="xxl">Extra Extra Large</md-option>
-                              </md-select>
-                            </md-input-container>
-                          </div>
-                          <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                            <md-input-container>
-                              <label>Favorite Color</label>
-                              <md-select ng-model="size">
-                                <md-option value="r">Red</md-option>
-                                <md-option value="g">Green</md-option>
-                                <md-option value="b">Blue</md-option>
-                                <md-option value="y">Yellow</md-option>
-                                <md-option value="bl">Black</md-option>
-                                <md-option value="w">White</md-option>
-                              </md-select>
-                            </md-input-container>
-                          </div>
-
-
-                    <md-content layout="column" flex="100" class="md-whiteframe-3dp">
-                      <md-toolbar layout="row">
-                        <div class="md-toolbar-tools">
-                          <h1>Nested Subsection</h1>
+<!--             <md-tab label="Section 2">
+                <md-content layout-padding>
+                    <div>
+                        Section 2 Content
+                    </div>
+                </md-content>
+            </md-tab> -->
+            <md-tab label="Section 3">
+                <md-content layout-padding>
+                    <div>
+                                              <div>This is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of contentThis is a lot of content</div>
                         </div>
-                      </md-toolbar>
-                      <div layout="row" flex class="md-padding" layout-wrap>
-
-                        <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                        <md-input-container>
-                            <label>Work Email</label>
-                            <input ng-model="workEmail" type="email" />
-                        </md-input-container>
-                      </div>
-
-                      <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                        <md-input-container>
-                            <label>Home Email</label>
-                            <input ng-model="homeEmail" type="email" />
-                        </md-input-container>
-                      </div>
-                      <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                        <md-input-container>
-                            <label>Website</label>
-                            <input ng-model="website" type="url" />
-                        </md-input-container>
-                      </div>
-
-                    <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                      <span style="font-size: x-small; opacity: 0.3">Birthdate<br /></span>
-                        <md-datepicker ng-Model="myDate" md-placeholder="Enter Date"></md-datepicker>
                     </div>
-
-
-                    <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                      <fieldset class="standard">
-                        <legend><span style="font-size: x-small; opacity: 0.6">Languages</span></legend>
-                        <md-checkbox aria-label="English">English</md-checkbox>
-                        <md-checkbox aria-label="Spanish">Spanish</md-checkbox>
-                        <md-checkbox aria-label="Chinese">Chinese</md-checkbox>
-                        <md-checkbox aria-label="French">French</md-checkbox>
-                        <md-checkbox aria-label="Italian">Italian</md-checkbox>
-                      </fieldset>
-
-                    </div>
-
-                    <div layout-padding flex-xs="100" flex-sm="50" flex-md="33" flex-gt-md="25">
-                      <fieldset class="standard">
-                        <legend><span style="font-size: x-small; opacity: 0.6">Favorite Fruit</span></legend>
-                        <md-radio-group ng-model="data.group1">
-                          <md-radio-button value="Apple" class="md-primary">Apple</md-radio-button>
-                          <md-radio-button value="Banana"> Banana </md-radio-button>
-                          <md-radio-button value="Mango">Mango</md-radio-button>
-                        </md-radio-group>
-                      </fieldset>
-                    </div>
-
-
-                      </div>
-                    </md-content>
-
-                      </div>
-                    </md-content>
-
-                  </md-content>
-              </div>
-              </md-content>
-
-
-          </md-tab>
-
-        <md-tab label="Section 1">
-            <md-content layout-padding>
-              <div>
-                Section 1 Content
-              </div>
-            </md-content>
-          </md-tab>
-
-          <md-tab label="Section 2">
-            <md-content layout-padding>
-              <div>
-                Section 2 Content
-              </div>
-            </md-content>
-          </md-tab>
-
-          <md-tab label="Section 3">
-            <md-content layout-padding>
-              <div>
-                Section 3 Content
-              </div>
-            </md-content>
-          </md-tab>
-
+                </md-content>
+            </md-tab>
         </md-tabs>
-
-
     </md-content>
 
     <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
