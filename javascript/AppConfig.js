@@ -110,6 +110,10 @@ app.config(function($routeProvider) {
             templateUrl: 'partials/kidsbible/jesuschildren.html',
             controller: 'ReadBibleCtrl'
         })
+        .when('/material', {
+            templateUrl: 'partials/material.html',
+            controller: 'AppCtrl'
+        })
         // .when('/pins/view/:id', { // colon means the value will change
         //     templateUrl: 'partials/pin-view.html',
         //     controller: 'PinViewCtrl'
