@@ -1,7 +1,5 @@
 "use strict";
 
-// Example of a modal service
-// https://github.com/dwmkerr/angular-modal-service/blob/master/samples/sampleapp.js#L24
 app.controller('NavCtrl', [
     '$scope', '$location', 'AuthFactory', '$rootScope',
      function($scope, $location, AuthFactory, $rootScope) {

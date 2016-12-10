@@ -20,16 +20,28 @@ button, html, input, select, textarea {
 //     border-radius: 25px;
 // }
 
-// // Styling for the header and Navigation
-// a[ng-click]{
-//     cursor: pointer;
-// }
+// Styling for the header and Navigation
+a[ng-click]{
+    cursor: pointer;
+}
 
 // Styling for Read the Bible Button
 .readbible {
     width: 80%;
     text-align: center;
     margin: 0 auto;
+
+    .bible_img img {
+        max-height: 350px;
+    }
+
+    .bible_text {
+        margin-top: .5em;
+
+        span {
+            font-size: 1.5em;
+        }
+    }
 }
 
 // Cloud animation
@@ -226,15 +238,20 @@ md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
     position: absolute;
     width: 33%;
     left: 33%;
+    bottom: 20%;
+}
+
+.form_size {
+    position: absolute;
+    width: 50%;
+    left: 25%;
 }
 
 // Media queries for smaller screens
-// @media only screen and (max-width: 990px) {
-//     body {
-//         background-color: lightblue;
-//     }
+// @media only screen and (device-width: 1500px) {
+//   /* For general iPad layouts */
 
-//     .container {
-//         width: 100%;
+//     body {
+//         font-size: 4em;
 //     }
 // }

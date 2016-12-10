@@ -6,10 +6,19 @@ body,
 button, html, input, select, textarea {
   font-family: 'MyWebFont', Fallback, sans-serif; }
 
+a[ng-click] {
+  cursor: pointer; }
+
 .readbible {
   width: 80%;
   text-align: center;
   margin: 0 auto; }
+  .readbible .bible_img img {
+    max-height: 350px; }
+  .readbible .bible_text {
+    margin-top: .5em; }
+    .readbible .bible_text span {
+      font-size: 1.5em; }
 
 #clouds {
   background: #c9dbe9;
@@ -179,4 +188,10 @@ md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
 .verse_of_day {
   position: absolute;
   width: 33%;
-  left: 33%; }
+  left: 33%;
+  bottom: 20%; }
+
+.form_size {
+  position: absolute;
+  width: 50%;
+  left: 25%; }

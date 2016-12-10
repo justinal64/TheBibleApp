@@ -11,19 +11,19 @@
 
     <md-content layout="row" flex>
         <md-tabs flex>
-            <md-tab ng-repeat="bible in bibles" label="{{bible.title}}">
+            <!-- try to implement this -->
+            <!-- http://codepen.io/pen/ -->
+            <md-tab ng-repeat="bible in bibles" md-selected="4" label="{{bible.title}}">
                 <md-content layout-padding>
                     <div class="readbible" ng-cloak>
                         <div>
-                            <div class="col-md-6 col-xs-12 bible_border">
-                                <div class="col-xs-offset-1 col-xs-5 bible_img">
+                            <div class="bible_bookmark">
+                                <a ng-click="bookmarkPage(bible)"><i class="fa fa-bookmark fa-5x" aria-hidden="true"></i></a>
+                                <div class="bible_img">
                                     <img ng-src="{{bible.url}}">
                                 </div>
-                                <div class="col-xs-12 bible_text">
+                                <div class="bible_text">
                                     <span>{{bible.story}}</span>
-                                </div>
-                                <div class="col-xs-12 page_num">
-                                    <span>Page # {{bible.page_num}}</span>
                                 </div>
                             </div>
                             <div></div>
