@@ -1,17 +1,42 @@
-<pager total-items="totalItems" ng-model="currentPage" items-per-page="itemsPerPage"></pager>
+<!-- <html lang="en" ng-app="TheBibleApp"> -->
+  <!-- <head> -->
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
+    <meta name="viewport" content="initial-scale=1" /> -->
+  <!-- </head> -->
+    <!-- <body layout="column" ng-app="TheBibleApp"> -->
 
-<div class="readbible" ng-cloak>
-    <div ng-repeat="bible in bibles.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
-        <div class="col-md-6 col-xs-12 bible_border">
-            <div class="col-xs-offset-1 col-xs-5 bible_img">
-                <img ng-src="{{bible.url}}">
-            </div>
-            <div class="col-xs-12 bible_text">
-                <span>{{bible.story}}</span>
-            </div>
-            <div class="col-xs-12 page_num">
-                <span>Page # {{bible.page_num}}</span>
-            </div>
-        </div>
-    </div>
-</div>
+
+
+    <md-content layout="row" flex>
+        <md-tabs flex>
+            <md-tab ng-repeat="bible in bibles" label="{{bible.title}}">
+                <md-content layout-padding>
+                    <div class="readbible" ng-cloak>
+                        <div>
+                            <div class="col-md-6 col-xs-12 bible_border">
+                                <div class="col-xs-offset-1 col-xs-5 bible_img">
+                                    <img ng-src="{{bible.url}}">
+                                </div>
+                                <div class="col-xs-12 bible_text">
+                                    <span>{{bible.story}}</span>
+                                </div>
+                                <div class="col-xs-12 page_num">
+                                    <span>Page # {{bible.page_num}}</span>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </md-content>
+            </md-tab>
+<!--             <md-tab label="Section 3">
+                <md-content layout-padding>
+                    <div>
+                        <div></div>
+                    </div>
+                </md-content>
+            </md-tab> -->
+        </md-tabs>
+    </md-content>

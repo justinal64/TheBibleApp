@@ -3,47 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>The Bible App</title>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <!-- Add to project if I decide to use animate.css -->
         <!-- https://github.com/daneden/animate.css -->
-        <link rel="stylesheet" type="text/css" href="
-https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     </head>
     <body ng-app="TheBibleApp" ng-controller="NavCtrl" ng-cloak>
-        <div class="container">
-            <nav class="navbar">
-                <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#/">The Church App</a>
-                </div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#/creation">Kids Bible</a>
-                        </li>
-                        <li ng-show="!userloggedin">
-                            <a ng-click="showComplex()">Login/Register</a>
-                        </li>
-                        <li ng-show="userloggedin">
-                            <a ng-click="logout()">Logout {{name}}</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="col-xs-12 col-md-12 bible" ng-view>
-                <!-- partials go here -->
+        <!-- Navigation -->
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h1><a href="#/">The Bible App</a></h1>
+                <span flex></span>
+                <md-button class="btn1" ng-if="!userloggedin" ng-click="login()">Login</md-button>
+                <md-button class="btn1" ng-if="userloggedin" ng-click="logout()">Logout</md-button>
             </div>
+        </md-toolbar>
+        <div ng-view> <!-- class="col-xs-12 col-md-12 bible" -->
+            <!-- partials go here -->
         </div>
     </body>
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="node_modules/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
     <!-- Add to project if working -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
-    <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js" type="text/javascript" charset="utf-8"></script> -->
+    <!-- Test using material -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script> -->
+    <script src="/node_modules/angular-aria/angular-aria.min.js"></script>
+    <script src="/node_modules/angular-material/angular-material.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+  <!-- end of test -->
     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
     <script src="/node_modules/angular-modal-service/dst/angular-modal-service.min.js"></script>
     <!-- End of cdn's -->
