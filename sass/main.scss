@@ -10,16 +10,6 @@ button, html, input, select, textarea {
   font-family: 'MyWebFont', Fallback, sans-serif;
 }
 
-// // styling around the bible
-// .bible {
-//     border-right: 10px solid black;
-//     border-left: 10px solid black;
-//     border-top: 2px solid black;
-//     border-bottom: 2px solid black;
-//     box-shadow: 10px 10px 5px #888888;
-//     border-radius: 25px;
-// }
-
 // Styling for the header and Navigation
 a[ng-click]{
     cursor: pointer;
@@ -41,6 +31,9 @@ a[ng-click]{
         span {
             font-size: 1.5em;
         }
+    }
+    .bible_bookmark {
+        float: right;
     }
 }
 

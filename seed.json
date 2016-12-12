@@ -1,31 +1,19 @@
 {
-    "bookmarks": {
-        "bookmark0": {
-            "uid": "",
-            "biblestoryid":""
-        },
-        "bookmark1": {
-            "uid": "",
-            "biblestoryid":""
-        },
-        "bookmark2": {
-            "uid": "",
-            "biblestoryid":""
-        }
-    },
-
     "users": {
         "user0": {
-            "uid": "",
-            "username": "a"
+            "uid": "ZQaQ0iP39gaLm3gRXTqUdZ0yLxw2",
+            "username": "jal",
+            "lastread": "2"
         },
         "user1": {
-            "uid": "",
-            "username": "b"
+            "uid": "Ow34v5TXAihCYhBuihImdXzanpx2",
+            "username": "jalb",
+            "lastread": "4"
         },
         "user2": {
-            "uid": "",
-            "username": "c"
+            "uid": "SwiZhXk9jFhFOa4EtadIQgG1s9D2",
+            "username": "jalc",
+            "lastread": "1"
         }
     },
     "biblestories": {
@@ -69,8 +57,7 @@
             "story": "That night, angels came to some shepards in the fields. They told the shepherds about the baby, who was Christ the Lord. The shepherds came to worship Jesus. Some kings from the East saw the star. They followed it to Bethlehem. They bowed to the baby Jesus. They gave him gifts.",
             "title": "Wise Men",
             "description": "The Shepards and the Wise Men",
-            "url": "./img/kidsbible/thestoryofcreation.png",
-            "page_num": "25"
+            "url": "./img/kidsbible/thestoryofcreation.png"
         },
         "story7": {
             "story": "God had sent Jesus to earth to do good for all people. When Jesus grew up, he told everyone about the power and goodness of God. He told them that God loved them. One day, a women followed Jesus. She was very sick. She touched Jesus' coat. Jesus turned around. He blessed the woman. All at once, she felt better. She was not sick anymore. A man who was blind came to Jesus. Jesus touched his eyes with mud. Now the man could see! The sick woman and the blind man were healed because their faith in God and Jesus.",

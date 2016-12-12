@@ -19,6 +19,8 @@ a[ng-click] {
     margin-top: .5em; }
     .readbible .bible_text span {
       font-size: 1.5em; }
+  .readbible .bible_bookmark {
+    float: right; }
 
 #clouds {
   background: #c9dbe9;

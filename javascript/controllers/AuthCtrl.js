@@ -50,6 +50,9 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
     };
 
     $scope.registerUser = (registerNewUser) => {
+        // new users will start at story 0
+        registerNewUser.lastread = 0;
+        console.log("registerNewUser = ", registerNewUser);
         AuthFactory.registerWithEmail(registerNewUser).then((didRegister) => {
             registerNewUser.uid = didRegister.uid;
             console.log("didRegister", didRegister);
@@ -60,6 +63,7 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
     };
 
     $scope.loginUser = (loginNewUser) => {
+        console.log(loginNewUser);
         logMeIn(loginNewUser);
     };
 

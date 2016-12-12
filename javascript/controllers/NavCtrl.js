@@ -7,12 +7,12 @@ app.controller('NavCtrl', [
     // is anyone logged in?
     $rootScope.userloggedin = false;
 
+    // name if the user logged in
+    $rootScope.name = "";
+
     $scope.login = () => {
         $location.url("/login");
     };
-
-    // name if the user logged in
-    $rootScope.name = "";
 
     $scope.logout = () => {
         AuthFactory.logout();
