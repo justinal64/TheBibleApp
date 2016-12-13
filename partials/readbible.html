@@ -13,7 +13,7 @@
         <md-tabs md-selected="data.selectedIndex" flex>
             <!-- try to implement this -->
             <!-- http://codepen.io/pen/ -->
-            <md-tab ng-repeat="bible in bibles" md-selected="data.selectedIndex" label="{{bible.title}}">
+            <md-tab ng-repeat="bible in bibles" ng-click="lastread(bible)" md-selected="data.selectedIndex" label="{{bible.title}}">
                 <md-content layout-padding>
                     <div class="readbible" ng-cloak>
                         <div>

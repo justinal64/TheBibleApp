@@ -15,7 +15,7 @@
                 <h1><a href="#/">The Bible App</a></h1>
                 <span flex></span>
                 <md-button class="btn1" ng-if="!userloggedin" ng-click="login()">Login</md-button>
-                <md-button class="btn1" ng-if="userloggedin" ng-click="logout()">Logout</md-button>
+                <md-button class="btn1" ng-if="userloggedin" ng-click="logout()">Logout <!-- {{$rootScope.user}} --></md-button>
             </div>
         </md-toolbar>
         <div ng-view> <!-- class="col-xs-12 col-md-12 bible" -->

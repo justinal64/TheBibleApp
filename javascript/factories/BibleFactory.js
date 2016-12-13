@@ -2,22 +2,6 @@
 
 app.factory("BibleFactory", function($q, $http, FIREBASE_CONFIG) {
 
-    // var getPinList = function(userId, boardId) {
-    //     return $q((resolve, reject) => {
-    //         $http.get(`${FIREBASE_CONFIG.databaseURL}/userpins.json?orderBy="boardid"&equalTo="${boardId}"`)
-    //         .success((response) => {
-    //             let pins = [];
-    //             Object.keys(response).forEach((key) => {
-    //                 response[key].id = key;
-    //                 pins.push(response[key]);
-    //             });
-    //             resolve(pins);
-    //         })
-    //         .error((errorResponse) => {
-    //             reject(errorResponse);
-    //         });
-    //     });
-    // };
 
     var getKidsBible = function() {
         return $q((resolve, reject) => {

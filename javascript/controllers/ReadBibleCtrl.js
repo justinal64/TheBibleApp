@@ -1,24 +1,28 @@
 "use strict";
 
-app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootScope, $location) {
+app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootScope, $location, UserFactory, AuthFactory) {
     $scope.bible = {};
-    $scope.data = {
-      selectedIndex: "2", // this needs to be a field in fb.
-      secondLocked:  true,
-      secondLabel:   "Item Two",
-      bottom:        false
-    };
+    $scope.data = {};
 
+    // This is used to determine what tab is shown
+    if($rootScope.user === undefined) {
+        $scope.data.selectedIndex = 0;
+    } else {
+        $scope.data.selectedIndex = $rootScope.user.lastread;
+    }
 
-    $scope.bookmarkPage = (bible) => {
-        console.log("bookmark Working!!!!!!");
-        console.log(bible);
-        // If userloggedin is true bookmark the page
-        if($rootScope.userloggedin) {
-            // add bookmark to db
-
-        } else {
-            $location.url('#/login');
+    // this updates the lastread page each time the user switches tabs
+    $scope.lastread = (bible) => {
+        if($rootScope.user !== undefined) {
+            let editUser = {};
+            UserFactory.getUser($rootScope.user.uid).then((response) => {
+                editUser = {
+                    id: response.id,
+                    lastread: bible.id.substring(5) // this removes story from the id
+                };
+            }).then(() => {
+                UserFactory.editUser(editUser);
+            });
         }
     };
 
