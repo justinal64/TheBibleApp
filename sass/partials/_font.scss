@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('../font/DK_Cool_Crayon.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+body,
+button, html, input, select, textarea {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+}
