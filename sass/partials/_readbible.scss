@@ -1,0 +1,21 @@
+// Styling for Read the Bible Button
+.readbible {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+    .bible_img img {
+        max-height: 350px;
+    }
+
+    .bible_text {
+        margin-top: .5em;
+
+        span {
+            font-size: 1.5em;
+        }
+    }
+    .bible_bookmark {
+        float: right;
+    }
+}

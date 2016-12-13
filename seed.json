@@ -21,7 +21,7 @@
             "story": "God made the earth and the sun. He made the moon and the stars. God made all the animals and plants that live on earth. He made man and women. God looked at all He had done. And it was very good!",
             "title": "Creation",
             "description": "This is the story of God creating the world we live in.",
-            "url": "./img/kidsbible/beginning.png"
+            "url": "./img/kidsbible/creation.svg"
         },
         "story1": {
             "story": "Noah was a good man. God told Noah to build a big boat. He told Noah to get two of every kind of animal on the earth. The boat was big enough to hold them all. A storm came. It rained for fourty days and fourty nights. The earth was flooded. When the storm stopped, Noah sent a dove to find dry land. The boat landed on top of a mountain. The water was gone! A rainbow appeared in the sky. It was a sign from God. Noah's family and the animals left the boat. God had saved them from the flood.",
@@ -33,43 +33,43 @@
             "story": "A women had a baby boy. The baby was in great danger. His mother had to save him. She put him in a basket and took him to the river. The king's daughter found the basket. The young princess cared for the baby as her own. She named him Moses. Moses grew up to be a strong man. He became a shepard. Then God spoke to Moses. He told moses to save his people. They were slaves to a cruel king. God's people ran away from the king. Moses led them across the desert. They came to the sea. God made the sea open up so that the people could cross. God's people were free! They thanked Moses, their great leader.",
             "title": "Moses",
             "description": "The life of Moses",
-            "url": "./img/kidsbible/babymosesmom.jpg"
+            "url": "./img/kidsbible/babymoses.jpg"
         },
         "story3": {
             "story": "Goliath was a giant. He came to fight God's people. The soldiers did not want to fight Goliath. He was too big and strong. But a boy named David was not afraid. God had blessed David and made him very brave. David stood before the giant Goliath. He said, \"I have come to fight you in the name of God.\". He threw a stone at Goliath. The stone hit the giant right in the middle of his forehead. He would never bother the people again. David was a hero.",
             "title": "David and Goliath",
             "description": "The story of how David defeated Goliath",
-            "url": "./img/kidsbible/davidandgoliath.jpg"
+            "url": "./img/kidsbible/davidandgoliath.gif"
         },
         "story4": {
             "story": "Once there was a man named Daniel. Daniel had faith in God. The king liked Daniel and gave him an important job. But other men were jealous of Daniel. The jealous men wanted to get rid of Daniel. They made him go into a pit with hungry lions. Daniel was in the pit all night long. He prayed to God. The next day, Daniel came out of the pit. The lions had not eaten him! Daniel's faith in God had saved him.",
             "title": "Daniel and the Lions",
             "description": "Daniel and the lions Den",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/danielandthelions.gif"
         },
         "story5": {
             "story": "Mary lived in the town of Nazareth. God sent an angel to her. The angel had wonderful news for Mary. She would be the mother of God's own son. It was time for the baby to be born. Mary and her husband, Joseph, had to travel to the town of Bethlehem. There was no room for Mary and Joseph at the inn. They had to stay in the stable. The baby was born there. They named him Jesus. When he was born, a bright star shone in the sky.",
             "title": "Jesus is Born",
             "description": "Jesus birth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/angel.jpg"
         },
         "story6": {
             "story": "That night, angels came to some shepards in the fields. They told the shepherds about the baby, who was Christ the Lord. The shepherds came to worship Jesus. Some kings from the East saw the star. They followed it to Bethlehem. They bowed to the baby Jesus. They gave him gifts.",
             "title": "Wise Men",
             "description": "The Shepards and the Wise Men",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/wisemen.png"
         },
         "story7": {
             "story": "God had sent Jesus to earth to do good for all people. When Jesus grew up, he told everyone about the power and goodness of God. He told them that God loved them. One day, a women followed Jesus. She was very sick. She touched Jesus' coat. Jesus turned around. He blessed the woman. All at once, she felt better. She was not sick anymore. A man who was blind came to Jesus. Jesus touched his eyes with mud. Now the man could see! The sick woman and the blind man were healed because their faith in God and Jesus.",
             "title": "God's Work",
             "description": "Jesus life on Earth",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/jesus.gif"
         },
         "story8": {
             "story": "One day, people brought their little children to see Jesus. Some men tried to send the children away. But Jesus loved everyone, big and small. He told the children to come to him. Jesus blessed the children. He will always be our friend. Let's read and learn together. This simple invitation can be your child's first step in a lifelong spiritual journey.",
             "title": "Little Children",
             "description": "Jesus loves little children",
-            "url": "./img/kidsbible/thestoryofcreation.png"
+            "url": "./img/kidsbible/jesus_children.gif"
         }
     }
 }
