@@ -6,7 +6,6 @@ app.controller('NavCtrl', [
 
     // is anyone logged in?
     $rootScope.userloggedin = false;
-
     // name if the user logged in
     $rootScope.name = "";
 

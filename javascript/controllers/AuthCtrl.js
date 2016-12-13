@@ -24,7 +24,6 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
             return UserFactory.getUser(didLogin.uid);
         }).then((userCreds) => {
             $rootScope.user = userCreds;
-            console.log("userCreds = ", userCreds);
             $scope.login = {};
             $scope.register = {};
             $location.url(`/readbible`);
