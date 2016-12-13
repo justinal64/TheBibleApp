@@ -1,6 +1,7 @@
 "use strict";
 
 app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, UserFactory) {
+    $rootScope.user = {};
     $scope.loginContainer = true;
     $scope.registerContainer = false;
     $scope.login = {
@@ -17,14 +18,13 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
     }
 
     let logMeIn = function(loginStuff) {
-        console.log("loginStuff = ", loginStuff);
         AuthFactory.authenticate(loginStuff).then((didLogin) => {
-            console.log("didLogin", didLogin);
+            console.log("didLogin = ", didLogin);
             $rootScope.userloggedin = true;
-            // return UserFactory.getUser(didLogin.uid);
+            return UserFactory.getUser(didLogin.uid);
         }).then((userCreds) => {
             $rootScope.user = userCreds;
-            console.log("userCreds", userCreds);
+            console.log("userCreds = ", userCreds);
             $scope.login = {};
             $scope.register = {};
             $location.url(`/readbible`);
@@ -52,13 +52,13 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
     $scope.registerUser = (registerNewUser) => {
         // new users will start at story 0
         registerNewUser.lastread = 0;
-        console.log("registerNewUser = ", registerNewUser);
         AuthFactory.registerWithEmail(registerNewUser).then((didRegister) => {
             registerNewUser.uid = didRegister.uid;
-            console.log("didRegister", didRegister);
+            // console.log("didRegister", didRegister);
             return UserFactory.addUser(registerNewUser);
         }).then((registerComplete) => {
             logMeIn(registerNewUser);
+            console.log("$rootScope.userCreds = ", $rootScope.userCreds);
         });
     };
 
