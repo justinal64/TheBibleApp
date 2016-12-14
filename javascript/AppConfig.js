@@ -46,6 +46,10 @@ app.config(function($routeProvider) {
             templateUrl: 'partials/modal.html',
             controller: 'ModalCtrl'
         })
+        .when('/dbp', {
+            templateUrl: 'partials/dbp.html',
+            controller: 'DBPCtrl'
+        })
         // .when('/pins/view/:id', { // colon means the value will change
         //     templateUrl: 'partials/pin-view.html',
         //     controller: 'PinViewCtrl'

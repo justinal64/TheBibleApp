@@ -13,6 +13,10 @@ app.controller('NavCtrl', [
         $location.url("/login");
     };
 
+    $scope.dbp = () => {
+        $location.url("/dbp");
+    };
+
     $scope.logout = () => {
         AuthFactory.logout();
         $rootScope.userloggedin = false;

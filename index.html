@@ -15,6 +15,7 @@
             <div class="md-toolbar-tools">
                 <h1><a href="#/">The Bible App</a></h1>
                 <span flex></span>
+                <md-button class="btn1" ng-click="dbp()">DBP</md-button>
                 <md-button class="btn1" ng-if="!userloggedin" ng-click="login()">Login</md-button>
                 <md-button class="btn1" ng-if="userloggedin" ng-click="logout()">Logout {{user.username}}</md-button>
             </div>
@@ -41,6 +42,7 @@
     <script type="text/javascript" src="/javascript/AppConstant.js"></script>
     <script type="text/javascript" src="/javascript/AppConfig.js"></script>
     <script src="/javascript/factories/AuthFactory.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascript/factories/DBPFactory.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/factories/UserFactory.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/factories/BibleFactory.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/ModalCtrl.js" type="text/javascript" charset="utf-8"></script>
@@ -48,4 +50,5 @@
     <script src="/javascript/controllers/AuthCtrl.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/HomePageCtrl.js" type="text/javascript" charset="utf-8"></script>
     <script src="/javascript/controllers/ReadBibleCtrl.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascript/controllers/DBPCtrl.js" type="text/javascript" charset="utf-8"></script>
 </html>
