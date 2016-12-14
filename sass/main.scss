@@ -1,4 +1,6 @@
 @import "partials/font";
+
+// Styling for kids bible
 @import "partials/clouds";
 @import "partials/homepage";
 @import "partials/nav";
@@ -6,6 +8,10 @@
 @import "partials/login";
 @import "partials/mediaqueries";
 @import "partials/animation";
+
+// styling for adult bible
+@import "partials/adultbible/dbp";
+
 // fixes a problem where it doesn't show the content in each tab
 md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
     min-height: 900px;

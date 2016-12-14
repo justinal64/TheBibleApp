@@ -4,3 +4,24 @@
 
 <md-button class="md-raised md-primary" ng-click="getOTBible()">Get OT Bible</md-button>
 
+<md-button class="md-raised md-primary" ng-click="getOTVerse()">Get NT Verse</md-button>
+
+<md-button class="md-raised md-primary" ng-click="getNTVerse()">Get NT Verse</md-button>
+
+<div class="input-field col s12">
+    <span>Choose a book</span>
+    <select ng-model="selectedBook" ng-change="bookselected()">
+        <option  value="" selected>Choose a Book</option>
+        <option ng-repeat="bible in NTBibles" value="{{bible.book_id}}">{{bible.book_name}}</option>
+    </select>
+</div>
+
+
+<!-- Work on displaying the verses in the chapter selected and book disappearing -->
+<div class="input-field col s12">
+    <span>Choose a book</span>
+    <select ng-model="selectedBook"> <!-- ng-change="bookselected()" -->
+        <option  value="" selected>Choose a Chapter</option>
+        <option ng-repeat="chapter in chapters" value="{{chapter.chapter_id}}">{{chapter.chapter_name}}</option>
+    </select>
+</div>

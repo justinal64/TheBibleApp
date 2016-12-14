@@ -49,15 +49,75 @@ app.factory("DBPFactory", function($q, $http) {
         });
     };
 
+    var getOTVerse = function() {
+        return $q((resolve, reject) => {
+            // $http.get(`${FIREBASE_CONFIG.databaseURL}/biblestories.json`)
+            $http.get(`http://dbt.io/text/verse?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=${OT}&book_id=Gen&v=2`)
+            .success((response) => {
+                // let pins = [];
+                // Object.keys(response).forEach((key) => {
+                //     response[key].id = key;
+                //     pins.push(response[key]);
+                // });
+                // resolve(pins);
+                resolve(response);
+            })
+            .error((errorResponse) => {
+                reject(errorResponse);
+            });
+        });
+    };
+
+    var getNTVerse = function() {
+        return $q((resolve, reject) => {
+            // $http.get(`${FIREBASE_CONFIG.databaseURL}/biblestories.json`)
+            $http.get(`http://dbt.io/text/verse?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNAS&book_id=Matt&v=2`)
+            .success((response) => {
+                // let pins = [];
+                // Object.keys(response).forEach((key) => {
+                //     response[key].id = key;
+                //     pins.push(response[key]);
+                // });
+                // resolve(pins);
+                resolve(response);
+            })
+            .error((errorResponse) => {
+                reject(errorResponse);
+            });
+        });
+    };
+
+    var getChapters = function(book_id) {
+        return $q((resolve, reject) => {
+            $http.get(`http://dbt.io/library/chapter?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNAS&book_id=${book_id}&v=2`)
+            .success((response) => {
+                resolve(response);
+            })
+            .error((errorResponse) => {
+                reject(errorResponse);
+            });
+        });
+    };
+
+
+
+
+
+
+
     // URL request for chapters of a book
     // http://dbt.io/library/chapter?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNASO2ET&book_id=Gen&v=2
 
-
-
+    // http://www.digitalbibleplatform.com/docs/api-version-2/library-text/verse/
+    // this pulls back every verse in genesis
+    // http://dbt.io/text/verse?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNASO2ET&book_id=Gen&v=2
 
     return {
             getNTBible: getNTBible,
-            getOTBible: getOTBible
+            getOTBible: getOTBible,
+            getOTVerse: getOTVerse,
+            getNTVerse: getNTVerse,
+            getChapters: getChapters
         };
 
 });
