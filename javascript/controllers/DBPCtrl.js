@@ -3,6 +3,9 @@
 app.controller("DBPCtrl", function($scope, DBPFactory) {
     $scope.booksOfBibles = {};
     $scope.chapters = {};
+    $scope.bookSelected = {};
+    $scope.showchapters = false;
+
 
     $scope.getBooksOfBible = () => {
         DBPFactory.getBible().then((response) => {
@@ -22,7 +25,23 @@ app.controller("DBPCtrl", function($scope, DBPFactory) {
         // DBPFactory.getVerse()
     };
 
+    $scope.bookSelected = (book_id) => {
+        Object.keys($scope.booksOfBibles).forEach((key, value) => {
+            if($scope.booksOfBibles[key].book_id === book_id) {
+                $scope.chapters = $scope.booksOfBibles[key].chapters;
+                $scope.showchapters = true;
+            }
+        });
+    };
+
 });
+
+                // let pins = [];
+                // Object.keys(response).forEach((key) => {
+                //     response[key].id = key;
+                //     pins.push(response[key]);
+                // });
+                // resolve(pins);
 
 
 

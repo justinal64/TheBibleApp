@@ -10,26 +10,25 @@
 
 <div class="input-field col s12">
     <span>Choose a book</span>
-        <!-- <option  value="" selected>Choose a Book</option> -->
-        <!-- <div ng-repeat="bible in booksOfBibles"> -->
-            <select ng-model="selectedBook" ng-change="bookSelected()">
-                <option ng-repeat="bible in booksOfBibles" ng-init="cc={chapters: ''}" value="{{bible.book_id}}">{{bible.book_name}}</option>
-            </select>
-<!--             <select>
-                <option ng-repeat="chapter in bible.chapters" >{{chapter}}</option>
-            </select> -->
-        <!-- </div> -->
+    <select ng-model="selectedBook" ng-change="bookSelected(selectedBook)">
+        <option  value="" selected>Choose a Book</option>
+        <option ng-repeat="bible in booksOfBibles" value="{{bible.book_id}}">{{bible.book_name}}</option>
+    </select>
+    <select ng-show="showchapters">
+        <option  value="" selected>Choose a Chapter</option>
+        <option ng-repeat="chapter in chapters">{{chapter}}</option>  <!-- | filter:selectedBook -->
+    </select>
 </div>
 
-    <span>Choose a book</span>
+<!--     <span>Choose a book</span>
     <select class="form-control" ng-init="cc={book: ''}" ng-model="cc.bible">
          <option ng-repeat="bible in booksOfBibles" value="{{bible.book_name}}">{{bible.book_name}}</option>
     </select>
     {{cc}}
     <span>Choose a Chapter</span>
     <select class="form-control">
-        <option ng-options="chapter for bible in booksOfBibles" ng-model="test" value="{{chapter}}">{{chapter}}</option>
-    </select>
+        <option data-ng-options="chapter for bible in booksOfBibles" ng-model="test" value="{{chapter}}">{{chapter}}</option>
+    </select> -->
 
 <!--     <span>Choose a book</span>
     <select class="form-control" ng-init="cc={location: ''}" ng-model="cc.city">

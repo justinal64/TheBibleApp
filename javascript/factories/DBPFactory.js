@@ -13,12 +13,6 @@ app.factory("DBPFactory", function($q, $http) {
             $http.get(`http://dbt.io/library/book?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNAS&v=2`)
             // http://dbt.io/library/bookorder?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNASN2ET&v=2
             .success((response) => {
-                // let pins = [];
-                // Object.keys(response).forEach((key) => {
-                //     response[key].id = key;
-                //     pins.push(response[key]);
-                // });
-                // resolve(pins);
                 resolve(response);
             })
             .error((errorResponse) => {
@@ -35,12 +29,6 @@ app.factory("DBPFactory", function($q, $http) {
             $http.get(`http://dbt.io/library/bookorder?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=${OT}&v=2`)
             // http://dbt.io/library/bookorder?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNASN2ET&v=2
             .success((response) => {
-                // let pins = [];
-                // Object.keys(response).forEach((key) => {
-                //     response[key].id = key;
-                //     pins.push(response[key]);
-                // });
-                // resolve(pins);
                 resolve(response);
             })
             .error((errorResponse) => {
