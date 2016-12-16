@@ -1,44 +1,33 @@
 "use strict";
 
 app.controller("DBPCtrl", function($scope, DBPFactory) {
-    $scope.NTBibles = {};
+    $scope.booksOfBibles = {};
     $scope.chapters = {};
 
-    $scope.getBible = () => {
-        DBPFactory.getNTBible().then((response) => {
-            console.log("getNTBible = ", response);
-            $scope.NTBibles = response;
+    $scope.getBooksOfBible = () => {
+        DBPFactory.getBible().then((response) => {
+            response.forEach((item, index) => {
+                // create an array of chapters instead of comma seperated string
+                item.chapters = item.chapters.split(',');
+                $scope.booksOfBibles[index] = item;
+            });
+            console.log($scope.booksOfBibles);
         });
     };
-    $scope.getBible();
+    $scope.getBooksOfBible();
 
-    $scope.getOTBible = () => {
-        DBPFactory.getOTBible().then((response) => {
-            console.log("getOTBible = ", response);
-        });
-    };
-    // $scope.getOTBible();
-
-    $scope.getNTVerse = () => {
-        DBPFactory.getNTVerse().then((response) => {
-            console.log("getNTVerse =", response);
-        });
-    };
-    // $scope.getNTVerse();
-
-    $scope.getOTVerse = () => {
-        DBPFactory.getOTVerse().then((response) => {
-            console.log("getOTVerse =", response);
-        });
-    };
-    // $scope.getOTVerse();
-
-    // This is triggered when the user selects a book
-    $scope.bookselected = () => {
-            DBPFactory.getChapters($scope.selectedBook).then((chapters) => {
-                $scope.chapters = chapters;
-                console.log($scope.chapters);
-        });
+    $scope.getChapter = () => {
+        console.log("$scope.selectedBook = ", $scope.selectedBook);
+        console.log("$scope.selectedChapter = ", $scope.selectedChapter);
+        // DBPFactory.getVerse()
     };
 
 });
+
+
+
+// var a = ["a", "b", "c"];
+
+// a.forEach(function(element) {
+//     console.log(element);
+// });
