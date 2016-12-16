@@ -2,9 +2,6 @@
 
 app.factory("DBPFactory", function($q, $http) {
 
-    let NT = "ENGNASN2ET";
-    let OT = "ENGNASO2ET";
-
     // dam_id for NT ENGNASN2ET
     // This dam_id is pulling an NT english version of NAS New American Standard Bible
     var getBible = function() {
@@ -23,19 +20,19 @@ app.factory("DBPFactory", function($q, $http) {
 
     // dam_id for OT ENGNASO2ET
     // This dam_id is pulling an OT english version of NAS New American Standard Bible
-    var getOTBible = function() {
-        return $q((resolve, reject) => {
-            // $http.get(`${FIREBASE_CONFIG.databaseURL}/biblestories.json`)
-            $http.get(`http://dbt.io/library/bookorder?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=${OT}&v=2`)
-            // http://dbt.io/library/bookorder?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNASN2ET&v=2
-            .success((response) => {
-                resolve(response);
-            })
-            .error((errorResponse) => {
-                reject(errorResponse);
-            });
-        });
-    };
+    // var getOTBible = function() {
+    //     return $q((resolve, reject) => {
+    //         // $http.get(`${FIREBASE_CONFIG.databaseURL}/biblestories.json`)
+    //         $http.get(`http://dbt.io/library/bookorder?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=${OT}&v=2`)
+    //         // http://dbt.io/library/bookorder?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNASN2ET&v=2
+    //         .success((response) => {
+    //             resolve(response);
+    //         })
+    //         .error((errorResponse) => {
+    //             reject(errorResponse);
+    //         });
+    //     });
+    // };
 
     var getChapters = function(book_id) {
         return $q((resolve, reject) => {
@@ -49,9 +46,9 @@ app.factory("DBPFactory", function($q, $http) {
         });
     };
 
-    var getVerse = function(book_id, chapter_id) {
+    var getVerse = function(book_id, chapter_id, testament) {
         return $q((resolve, reject) => {
-            $http.get(`http://dbt.io/text/verse?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=ENGNASN2ET&book_id=${book_id}&chapter_id=${chapter_id}&v=2`)
+            $http.get(`http://dbt.io/text/verse?key=c0c769e931f78307a6c1c65cc5bd1d8c&dam_id=${testament}&book_id=${book_id}&chapter_id=${chapter_id}&v=2`)
             .success((response) => {
                 resolve(response);
             })
@@ -60,12 +57,6 @@ app.factory("DBPFactory", function($q, $http) {
             });
         });
     };
-
-
-
-
-
-
 
 
     // URL request for chapters of a book

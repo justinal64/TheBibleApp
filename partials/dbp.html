@@ -1,41 +1,29 @@
-<h1>DBP Homepage</h1>
+<h1>Adult Bible</h1>
 
-<md-button class="md-raised md-primary" ng-click="getNTBible()">Get NT Bible</md-button>
+<!-- <md-button class="md-raised md-primary" ng-click="getNTBible()">Get NT Bible</md-button>
 
 <md-button class="md-raised md-primary" ng-click="getOTBible()">Get OT Bible</md-button>
 
 <md-button class="md-raised md-primary" ng-click="getOTVerse()">Get NT Verse</md-button>
 
 <md-button class="md-raised md-primary" ng-click="getNTVerse()">Get NT Verse</md-button>
-
+ -->
 <div class="input-field col s12">
     <span>Choose a book</span>
     <select ng-model="selectedBook" ng-change="bookSelected(selectedBook)">
         <option  value="" selected>Choose a Book</option>
         <option ng-repeat="bible in booksOfBibles" value="{{bible.book_id}}">{{bible.book_name}}</option>
     </select>
-    <select ng-show="showchapters">
+    <select ng-show="showchapters" ng-model="selectedChapter" ng-change="chapterLookup(selectedChapter)">
         <option  value="" selected>Choose a Chapter</option>
         <option ng-repeat="chapter in chapters">{{chapter}}</option>  <!-- | filter:selectedBook -->
     </select>
+    <div class="col s8">
+        <div class="bibleverse" ng-repeat="verse in verses">
+            <span>{{verse.verse_id}}</span>
+            <p>{{verse.verse_text}}</p>
+        </div>
+    </div>
 </div>
 
-<!--     <span>Choose a book</span>
-    <select class="form-control" ng-init="cc={book: ''}" ng-model="cc.bible">
-         <option ng-repeat="bible in booksOfBibles" value="{{bible.book_name}}">{{bible.book_name}}</option>
-    </select>
-    {{cc}}
-    <span>Choose a Chapter</span>
-    <select class="form-control">
-        <option data-ng-options="chapter for bible in booksOfBibles" ng-model="test" value="{{chapter}}">{{chapter}}</option>
-    </select> -->
-
-<!--     <span>Choose a book</span>
-    <select class="form-control" ng-init="cc={location: ''}" ng-model="cc.city">
-         <option ng-repeat="city in data" value="{{city.city}}">{{city.city}}</option>
-    </select>
-    <span>Choose a Chapter</span>
-    <select class="form-control">
-        <option ng-repeat="city in data| filter:cc" value="{{city.location}}">{{city.location}}</option>
-    </select> -->
 
