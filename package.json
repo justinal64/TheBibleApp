@@ -35,6 +35,7 @@
     "angular-material": "^1.1.1",
     "angular-route": "^1.5.8",
     "browserify": "^13.1.1",
+    "digital-bible-platform": "^0.2.2",
     "jquery": "^3.1.1",
     "materialize-css": "^0.97.8"
   },

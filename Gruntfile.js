@@ -4,7 +4,7 @@
     jshint: {
       files: ['./javascript/**/*.js'],
       options: {
-        predef: [ "document", "console", "$", "firebase", "FbAPI", "angular", "app"],
+        predef: [ "document", "console", "$", "firebase", "FbAPI", "angular", "app" ],
         esnext: true,
         globalstrict: true,
         globals: {},
