@@ -1,9 +1,8 @@
 @font-face {
   font-family: 'MyWebFont';
-  src: url("/font/DK_Cool_Crayon.ttf") format("truetype"); }
+  src: url("../font/DK_Cool_Crayon.ttf") format("truetype"); }
 
-body,
-button, html, input, select, textarea {
+.kidsfont {
   font-family: 'MyWebFont', Fallback, sans-serif; }
 
 #clouds {
@@ -208,6 +207,9 @@ a[ng-click] {
 select {
   display: inline;
   width: 20%; }
+
+.adultfont {
+  font-family: sans-serif; }
 
 md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
   min-height: 900px; }
