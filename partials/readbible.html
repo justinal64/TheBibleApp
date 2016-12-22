@@ -1,29 +1,10 @@
-<!-- <html lang="en" ng-app="TheBibleApp"> -->
-  <!-- <head> -->
-    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
-    <meta name="viewport" content="initial-scale=1" /> -->
-  <!-- </head> -->
-    <!-- <body layout="column" ng-app="TheBibleApp"> -->
-
-
-
     <md-content layout="row" flex>
         <md-tabs md-selected="data.selectedIndex" flex>
-            <!-- try to implement this -->
-            <!-- http://codepen.io/pen/ -->
             <md-tab ng-repeat="bible in bibles" ng-click="lastread(bible)" md-selected="data.selectedIndex" label="{{bible.title}}">
                 <md-content layout-padding>
                     <div class="readbible" ng-cloak>
                         <div>
                             <div>
-<!--                                 <div class="bible_bookmark">
-                                <span>{{bible.id}}</span>
-                                    <a ng-click="bookmarkPage(bible)">
-                                        <i class="fa fa-bookmark fa-3x" aria-hidden="true"></i>
-                                    </a>
-                                </div> -->
                                 <div class="bible_img" >
                                     <img ng-src="{{bible.url}}" class="box rotate">
                                 </div>
@@ -36,13 +17,6 @@
                     </div>
                 </md-content>
             </md-tab>
-<!--             <md-tab label="Section 3">
-                <md-content layout-padding>
-                    <div>
-                        <div></div>
-                    </div>
-                </md-content>
-            </md-tab> -->
         </md-tabs>
     </md-content>
 

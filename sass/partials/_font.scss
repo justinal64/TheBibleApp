@@ -3,7 +3,6 @@
   src: url('../font/DK_Cool_Crayon.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
-body,
-button, html, input, select, textarea {
+.kidsfont {
   font-family: 'MyWebFont', Fallback, sans-serif;
 }

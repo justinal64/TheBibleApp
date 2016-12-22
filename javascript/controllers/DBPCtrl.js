@@ -57,10 +57,6 @@ app.controller("DBPCtrl", function($scope, DBPFactory) {
             $scope.adultbible = true;
             console.log($scope.verses);
         });
-        // clear the values after looked up
-        $scope.book = "";
-        testament = "";
-
     };
 
 });
