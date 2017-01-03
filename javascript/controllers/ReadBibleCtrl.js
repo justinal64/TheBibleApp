@@ -35,6 +35,12 @@ app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootSco
     // populate array with all verses from db
     getKidsBible();
 
+    $scope.next = () => {
+        BibleFactory.getTextToSpeech().then((response) => {
+            $scope.spokenText = response;
+            // console.log(response);
+        });
 
+    };
 
 });

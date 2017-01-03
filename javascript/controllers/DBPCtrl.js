@@ -29,7 +29,6 @@ app.controller("DBPCtrl", function($scope, DBPFactory) {
     $scope.getChapter = () => {
         console.log("$scope.selectedBook = ", $scope.selectedBook);
         console.log("$scope.selectedChapter = ", $scope.selectedChapter);
-        // DBPFactory.getVerse()
     };
 
     $scope.bookSelected = (book_id) => {
@@ -56,7 +55,12 @@ app.controller("DBPCtrl", function($scope, DBPFactory) {
             $scope.verses = response;
             $scope.adultbible = true;
             console.log($scope.verses);
+            console.log("$scope.book =", $scope.book);
         });
+    };
+
+    $scope.previous = () => {
+        console.log("previous is working");
     };
 
 });

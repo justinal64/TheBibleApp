@@ -20,106 +20,23 @@ app.factory("BibleFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    // var postNewPin = function(newPin, boardId) {
-    //   console.log("boardId1", boardId);
-    //     return $q((resolve, reject)  => {
-    //         $http.post(`${FIREBASE_CONFIG.databaseURL}/pins.json`,
-    //                 JSON.stringify({
-    //                     title: newPin.title,
-    //                     description: newPin.description,
-    //                     url: newPin.url,
-    //                     uid: newPin.uid
-    //                 })
-    //             )
-    //         .success((postResponse) => {
-    //           console.log({postResponse});
-    //           console.log("boardId2", boardId);
-    //           postNewPinToBoard(newPin, boardId);
-    //             resolve(postResponse);
-    //         })
-    //         .error((postError) => {
-    //             reject(postError);
-    //         });
-    //     });
-    // };
+    var getTextToSpeech = function(book_id, chapter_id, testament) {
+        return $q((resolve, reject) => {
+            $http.get(`http://api.voicerss.org/?key=f6271e886a224fb1aa5061c768c91141&hl=en-us&src=Hello,%20world!`)
+            .success((response) => {
+                resolve(response);
+            })
+            .error((errorResponse) => {
+                reject(errorResponse);
+            });
+        });
+    };
 
-    // var postNewPinToBoard = function(newPin, boardId) {
-    //     return $q((resolve, reject)  => {
-    //         $http.post(`${FIREBASE_CONFIG.databaseURL}/userpins.json`,
-    //                 JSON.stringify({
-    //                     boardid: boardId,
-    //                     title: newPin.title,
-    //                     url: newPin.url,
-    //                     uid: newPin.uid
-    //                 })
-    //             )
-    //         .success((postResponse) => {
-    //             resolve(postResponse);
-    //         })
-    //         .error((postError) => {
-    //             reject(postError);
-    //         });
-    //     });
-    // };
 
-    // var deletePin = function(pinId) {
-    //     return $q((resolve, reject) => {
-    //         $http.delete(`${FIREBASE_CONFIG.databaseURL}/pins/${pinId}.json`)
-    //         .success((deleteResponse) => {
-    //             resolve(deleteResponse);
-    //         })
-    //         .error((deleteError) => {
-    //             reject(deleteError);
-    //         });
-    //     });
-    // };
-
-    // var deleteBoardPin = function(pinId) {
-    //     return $q((resolve, reject) => {
-    //         $http.delete(`${FIREBASE_CONFIG.databaseURL}/userpins/${pinId}.json`)
-    //         .success((deleteResponse) => {
-    //             resolve(deleteResponse);
-    //         })
-    //         .error((deleteError) => {
-    //             reject(deleteError);
-    //         });
-    //     });
-    // };
-
-    // var getSinglePin = function(pinId) {
-    //     return $q((resolve, reject) => {
-    //         $http.get(`${FIREBASE_CONFIG.databaseURL}/pins/${pinId}.json`)
-    //         .success((getSingleResponse) => {
-    //             resolve(getSingleResponse);
-    //         })
-    //         .error((getSingleError) => {
-    //             reject(getSingleError);
-    //         });
-    //     });
-    // };
-
-    // var editPin = function(editPin) {
-    //     console.log("factory edit", editPin);
-    //     return $q((resolve, reject)  => {
-    //         $http.put(`${FIREBASE_CONFIG.databaseURL}/pins/${editPin.id}.json`,
-    //                 JSON.stringify({
-    //                     assignedTo: editPin.assignedTo,
-    //                     isCompleted: editPin.isCompleted,
-    //                     task: editPin.task,
-    //                     uid: editPin.uid
-    //                 })
-    //             )
-    //         .success((editResponse) => {
-    //             resolve(editResponse);
-    //         })
-    //         .error((editError) => {
-    //             reject(editError);
-    //         });
-    //     });
-    // };
 
     return {
-            getKidsBible: getKidsBible
+            getKidsBible: getKidsBible,
+            getTextToSpeech: getTextToSpeech
         };
 
 });
