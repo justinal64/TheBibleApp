@@ -17,6 +17,10 @@ app.controller('NavCtrl', [
         $location.url("/dbp");
     };
 
+    $scope.kidsbible = () => {
+        $location.url("/readbible");
+    };
+
     $scope.logout = () => {
         AuthFactory.logout();
         $rootScope.userloggedin = false;

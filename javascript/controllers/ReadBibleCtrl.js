@@ -3,6 +3,7 @@
 app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootScope, $location, UserFactory, AuthFactory) {
     $scope.bible = {};
     $scope.data = {};
+    let textToSpeech = 'http://api.voicerss.org/?key=f6271e886a224fb1aa5061c768c91141&hl=en-us&src=';
 
     // This is used to determine what tab is shown
     if($rootScope.user === undefined) {
@@ -29,7 +30,6 @@ app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootSco
     let getKidsBible = () => {
         BibleFactory.getKidsBible().then((response) => {
             $scope.bibles = response;
-            console.log(response);
         });
     };
     // populate array with all verses from db
@@ -41,6 +41,12 @@ app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootSco
             // console.log(response);
         });
 
+    };
+
+    $scope.play = (story) => {
+        let audio = document.getElementById("readAudiobible");
+        audio.src = textToSpeech + story;
+        audio.play();
     };
 
 });

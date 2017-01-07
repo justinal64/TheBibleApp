@@ -13,6 +13,7 @@
             <div class="md-toolbar-tools">
                 <h1><a href="#/">The Bible App</a></h1>
                 <span flex></span>
+                <md-button class="btn1" ng-click="kidsbible()">Kids Bible</md-button>
                 <md-button class="btn1" ng-click="dbp()">Adult Bible</md-button>
                 <md-button class="btn1" ng-if="!userloggedin" ng-click="login()">Login</md-button>
                 <md-button class="btn1" ng-if="userloggedin" ng-click="logout()">Logout {{user.username}}</md-button>
