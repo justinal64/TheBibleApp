@@ -40,7 +40,7 @@ You can also use firebase to register/login. Once you login the Children's Bible
 <br/>
 ![Medium](./img/screenshots/login.png)
 <br/>
-This is what the website looks for adults.
+This is what the website looks like for adults.
 <br/>
 ![Small](./img/screenshots/adult.png)
 
