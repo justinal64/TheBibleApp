@@ -30,19 +30,19 @@ Then navigate to [http://localhost:9999](http://localhost:9999) in your browser 
 ## Screenshot
 This is what the website looks like when it is loaded.
 <br/>
-![HomeScreen](img/Screenshots/Homescreen.png)
+![HomeScreen](./img/Screenshots/Homescreen.png)
 <br/>
 This is what the website looks like for children.
 <br/>
-![Caption](img/Screenshots/ChildrensBible.png)
+![Caption](./img/Screenshots/ChildrensBible.png)
 <br/>
 You can also use firebase to register/login. Once you login the Children's Bible will keep up with the last place you read the Bible when you come back.
 <br/>
-![Medium](img/Screenshots/login.png)
+![Medium](./img/Screenshots/login.png)
 <br/>
 This is what the website looks for adults.
 <br/>
-![Small](img/Screenshots/adult.png)
+![Small](./img/Screenshots/adult.png)
 
 ## Contributors
 - [Justin Leggett](https://github.com/justinal64)
