@@ -11,8 +11,11 @@
                             <div class="bible_text">
                                 <span>{{bible.story}}</span>
                             </div>
+                            <div class="row">
+                                <audio id="readAudiobible" ng-src=""></audio>
+                                <a class="btn-flat" ng-click="play(bible.story)">Read the Bible</a>
+                            </div>
                         </div>
-                        <div></div>
                     </div>
                 </div>
             </md-content>
