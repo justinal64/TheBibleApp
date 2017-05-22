@@ -38,7 +38,6 @@ app.controller("ReadBibleCtrl", function($scope, BibleFactory, $filter, $rootSco
     $scope.next = () => {
         BibleFactory.getTextToSpeech().then((response) => {
             $scope.spokenText = response;
-            // console.log(response);
         });
 
     };

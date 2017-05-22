@@ -21,14 +21,11 @@ app.controller("DBPCtrl", function($scope, DBPFactory) {
                 item.chapters = item.chapters.split(',');
                 $scope.booksOfBibles[index] = item;
             });
-            console.log($scope.booksOfBibles);
         });
     };
     $scope.getBooksOfBible();
 
     $scope.getChapter = () => {
-        console.log("$scope.selectedBook = ", $scope.selectedBook);
-        console.log("$scope.selectedChapter = ", $scope.selectedChapter);
     };
 
     $scope.bookSelected = (book_id) => {
@@ -48,19 +45,13 @@ app.controller("DBPCtrl", function($scope, DBPFactory) {
     };
 
     $scope.chapterLookup = (chapter_id) => {
-        console.log("chapter_id = ", chapter_id);
-        console.log("$scope.book =", $scope.book);
-        console.log("testamnet = ", testament);
         DBPFactory.getVerse($scope.book, chapter_id, testament).then((response) => {
             $scope.verses = response;
             $scope.adultbible = true;
-            console.log($scope.verses);
-            console.log("$scope.book =", $scope.book);
         });
     };
 
     $scope.previous = () => {
-        console.log("previous is working");
     };
 
 });

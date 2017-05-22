@@ -19,7 +19,6 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
 
     let logMeIn = function(loginStuff) {
         AuthFactory.authenticate(loginStuff).then((didLogin) => {
-            console.log("didLogin = ", didLogin);
             $rootScope.userloggedin = true;
             return UserFactory.getUser(didLogin.uid);
         }).then((userCreds) => {
@@ -53,16 +52,13 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
         registerNewUser.lastread = 0;
         AuthFactory.registerWithEmail(registerNewUser).then((didRegister) => {
             registerNewUser.uid = didRegister.uid;
-            // console.log("didRegister", didRegister);
             return UserFactory.addUser(registerNewUser);
         }).then((registerComplete) => {
             logMeIn(registerNewUser);
-            console.log("$rootScope.userCreds = ", $rootScope.userCreds);
         });
     };
 
     $scope.loginUser = (loginNewUser) => {
-        console.log(loginNewUser);
         logMeIn(loginNewUser);
     };
 
@@ -73,11 +69,9 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
             uid: userData.uid,
             username: userData.displayName
           };
-          console.log("$rootScope.user",$rootScope.user );
           $location.url(`/boards/list`);
         }).catch(function(error) {
           // Handle Errors here.
-          console.log("user error", error);
           var errorCode = error.code;
           var errorMessage = error.message;
           // The email of the user's account used.
